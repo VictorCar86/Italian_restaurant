@@ -1,0 +1,45 @@
+.Menu-section {
+    padding: 0 10%;
+}
+.Menu-section__title::after {
+    content: "Menu";
+}
+.Menu-section__description {
+    letter-spacing: 1px;
+}
+.Menu-section__list-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 120px 0;
+}
+.Menu-section__list-container__item-container {
+    text-align: center;
+}
+.Menu-section__list-container__item-container__img {
+    width: 510px;
+    height: 665px;
+    object-fit: cover;
+    padding: 25px 20px;
+    border: 1px solid var(--deepgold);
+}
+.Menu-section__list-container__item-container__title {
+    margin: 45px 0 30px;
+    font-size: 3rem;
+    font-family: 'The Seasons', sans-serif;
+    color: var(--deepgold);
+}
+.Menu-section__list-container__item-container__link {
+    letter-spacing: 1px;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+.Menu-section__list-container__item-container__link:hover {
+    transition: color 0.5s;
+    color: var(--deepgold);
+}
+.Menu-section__list-container__item-container__addon {
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background-color: var(--deepgold);
+}

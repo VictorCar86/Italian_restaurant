@@ -1,0 +1,120 @@
+.MainPresentation {
+    position: relative;
+}
+.MainPresentation__gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0 25px;
+    padding: 0 10%;
+}
+.MainPresentation__gallery__aside {
+    position: relative;
+    align-self: flex-end;
+    width: 160px;
+    padding-bottom: 80px;
+    margin-right: 50px;
+}
+.MainPresentation__gallery__link,
+.MainPresentation__contacts-container__link {
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.MainPresentation__gallery__link:hover,
+.MainPresentation__contacts-container__link:hover {
+    color: var(--deepgold);
+    transition: color 0.5s;
+}
+.MainPresentation__gallery__link::after,
+.MainPresentation__contacts-container__link::after {
+    margin-left: 15px;
+    content: "+";
+    font-size: 1.2rem;
+    color: var(--deepgold);
+}
+.MainPresentation__gallery__addon,
+.MainPresentation__contacts-container__addon {
+    position: relative;
+    display: block;
+    height: 1px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: var(--deepgold);
+}
+.MainPresentation__gallery__addon::after {
+    position: absolute;
+    content: ".";
+    bottom: -6px;
+    left: 150px;
+    font-size: 2.5rem;
+    color: var(--deepgold);
+}
+.MainPresentation__gallery__image {
+    width: 950px;
+    min-width: 550px;
+    opacity: 0.7;
+    object-fit: cover;
+    object-position: 175px;
+}
+
+.MainPresentation__contact-info-container {
+    height: 50px;
+}
+.MainPresentation__contact-info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 25%;
+    padding: 0 10px;
+}
+.MainPresentation__social-media-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+}
+.MainPresentation__social-media-container__svg {
+    width: 16px;
+    fill: var(--deepgold);
+    cursor: pointer;
+}
+.MainPresentation__social-media-container__svg--email {
+    width: 23px;
+}
+.MainPresentation__contacts-container__info {
+    position: relative;
+    width: 160px;
+}
+.MainPresentation__contacts-container__addon::after {
+    position: absolute;
+    content: ".";
+    height: 1px;
+    width: 2px;
+    bottom: 23px;
+    right: -2px;
+    font-size: 2.5rem;
+    color: var(--deepgold);
+}
+
+.MainPresentation__main-description {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: default;
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.MainPresentation__main-description__title {
+    width: 650px;
+    font-size: 14rem;
+    font-family: "The Seasons", sans-serif;
+    color: #ffffff;
+}
+.MainPresentation__main-description__subtitle {
+    font-family: "The Seasons", sans-serif;
+    font-weight: 100;
+    color: #ffffff;
+}

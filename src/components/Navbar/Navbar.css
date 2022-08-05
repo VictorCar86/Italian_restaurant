@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #020b1b;
+}
+.navbar__regina-logo {
+    width: 90px;
+    cursor: pointer;
+}
+.navbar__list-item li {
+    display: inline-block;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.navbar__list-item li:hover {
+    color: var(--deepgold);
+    transition: color 0.5s;
+}
+.navbar__list-item .navbar__list-item--reserve {
+    border: 2px solid var(--deepgold);
+    padding: 6px 20px 6px;
+    border-radius: 20px;
+}
