@@ -18,7 +18,7 @@ const AboutUs = () => {
             <div className='AbousUs-container__hero'>
                 <img className='AbousUs-container__hero__img' src={require("../../assets/images/pylyp-sukhenko-chef-unsplash.jpg")} alt="A chef cutting vegetables" />
                 <div className='AbousUs-container__hero__info'>
-                    <span className='AbousUs-container__hero__info__addon'></span>
+                    <span className='line-addon'></span>
                     <p className='AbousUs-container__hero__info__description'>
                         Our dishes are based on
                         classic recipes from all over
@@ -26,7 +26,7 @@ const AboutUs = () => {
                         dishes focus on authenticity
                         and seasonal ingredients.
                     </p>
-                    <span className='AbousUs-container__hero__info__addon'></span>
+                    <span className='line-addon'></span>
                 </div>
             </div>
         </div>

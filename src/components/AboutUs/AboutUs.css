@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 50px 0;
+    margin: 140px 0 50px;
     padding: 0px 10%;
 }
 .AbousUs-container__main-description {
@@ -41,12 +41,6 @@
     transform: translate(-50%, 0);
     background-color: #80694e;
 }
-.AbousUs-container__hero__info__addon {
-    width: 115px;
-    height: 1px;
-    margin: 20px;
-    background-color: var(--deepgold);
-}
 .AbousUs-container__hero__info__description {
     text-align: center;
     width: 255px;
@@ -58,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 150px 0;
+    margin: 150px 0 250px;
     column-gap: 10%;
 }
 .AboutUs-section__extra-info__descrip-container {

@@ -1,93 +1,72 @@
 import React from 'react'
 import "./Menu.css"
+import PlatesMenu from '../PlatesMenu'
 
 const Menu = () => {
   return (
     <section className='Menu-section'>
         <h2 className='Menu-section__title title'>Menu</h2>
         <span className='title__addon'></span>
-        <p className='Menu-section__description'>Discover the taste</p>
+        <p className='description'>Discover the taste</p>
         <div className='Menu-section__list-container'>
-            <div className='Menu-section__list-container__item-container'>
-                <img
-                    className='Menu-section__list-container__item-container__img'
-                    src={require("../../assets/images/entries.jpg")}
-                    alt="Table with jam, chesse, strawberrys and grapes"
-                />
-                <h5 className='Menu-section__list-container__item-container__title'>Entrees</h5>
-                <p className='Menu-section__list-container__item-container__link'>View menu</p>
-                <span className='Menu-section__list-container__item-container__addon'></span>
+            <PlatesMenu
+                imgSrc={require("../../assets/images/entries.jpg")}
+                alt={"Table with jam, chesse, strawberrys and grapes"}
+                title={"Entries"}
+            />
+            <PlatesMenu
+                imgSrc={require("../../assets/images/breakfast.jpg")}
+                alt={"Cooked eggs with avocado and bread"}
+                title={"Breakfast"}
+            />
+            <PlatesMenu
+                imgSrc={require("../../assets/images/lunch_set_menu.jpg")}
+                alt={"Plate with mushrooms, lettuce and bread"}
+                title={"Launch set menu"}
+            />
+            <PlatesMenu
+                imgSrc={require("../../assets/images/main_courses.jpg")}
+                alt={"Roasted meat with zucchini, tomato and fine herbs"}
+                title={"Main courses"}
+            />
+            <PlatesMenu
+                imgSrc={require("../../assets/images/specialty_pastas.jpg")}
+                alt={"Fettuccine with meat and chesse"}
+                title={"Specialty pastas"}
+            />
+            <PlatesMenu
+                imgSrc={require("../../assets/images/pizza.jpg")}
+                alt={"Handmade pizza of chicken, chesse and pineapple"}
+                title={"Pizza"}
+            />
+            <PlatesMenu
+                imgSrc={require("../../assets/images/desserts.jpg")}
+                alt={"Caramelized slice of bread with blueberries and slices of banana"}
+                title={"Desserts"}
+            />
+            <PlatesMenu
+                imgSrc={require("../../assets/images/fresh_breads.jpg")}
+                alt={"Slice of bread followed by grapes and oatmeal"}
+                title={"Fresh breads"}
+            />
+        </div>
+        <div className='Menu-section__extra-info-container'>
+            <img
+                className='Menu-section__extra-info-container__img'
+                src={require("../../assets/images/fallon-travels.jpg")}
+                alt="Restaurant image"
+            />
+            <div className='Menu-section__extra-info-container__text-container'>
+                <div className='line-addon'></div>
+                <span className='Menu-section__extra-info-container__text-container__text'>
+                    You are always welcome
+                    in our restaurant and <br />
+                    we are happy to add your
+                    requests to our menu
+                </span>
+                <div className='line-addon'></div>
             </div>
-            <div className='Menu-section__list-container__item-container'>
-                <img
-                    className='Menu-section__list-container__item-container__img'
-                    src={require("../../assets/images/breakfast.jpg")}
-                    alt="Cooked eggs with avocado and bread"
-                />
-                <h5 className='Menu-section__list-container__item-container__title'>Breakfast</h5>
-                <p className='Menu-section__list-container__item-container__link'>View menu</p>
-                <span className='Menu-section__list-container__item-container__addon'></span>
-            </div>
-            <div className='Menu-section__list-container__item-container'>
-                <img
-                    className='Menu-section__list-container__item-container__img'
-                    src={require("../../assets/images/lunch_set_menu.jpg")}
-                    alt="Plate with mushrooms, lettuce and bread"
-                />
-                <h5 className='Menu-section__list-container__item-container__title'>Launch set menu</h5>
-                <p className='Menu-section__list-container__item-container__link'>View menu</p>
-                <span className='Menu-section__list-container__item-container__addon'></span>
-            </div>
-            <div className='Menu-section__list-container__item-container'>
-                <img
-                    className='Menu-section__list-container__item-container__img'
-                    src={require("../../assets/images/main_courses.jpg")}
-                    alt="Roasted meat with zucchini, tomato and fine herbs"
-                />
-                <h5 className='Menu-section__list-container__item-container__title'>Main courses</h5>
-                <p className='Menu-section__list-container__item-container__link'>View menu</p>
-                <span className='Menu-section__list-container__item-container__addon'></span>
-            </div>
-            <div className='Menu-section__list-container__item-container'>
-                <img
-                    className='Menu-section__list-container__item-container__img'
-                    src={require("../../assets/images/specialty_pastas.jpg")}
-                    alt="Fettuccine with meat and chesse"
-                />
-                <h5 className='Menu-section__list-container__item-container__title'>Specialty pastas</h5>
-                <p className='Menu-section__list-container__item-container__link'>View menu</p>
-                <span className='Menu-section__list-container__item-container__addon'></span>
-            </div>
-            <div className='Menu-section__list-container__item-container'>
-                <img
-                    className='Menu-section__list-container__item-container__img'
-                    src={require("../../assets/images/pizza.jpg")}
-                    alt="Handmade pizza of chicken, chesse and pineapple"
-                />
-                <h5 className='Menu-section__list-container__item-container__title'>Pizza</h5>
-                <p className='Menu-section__list-container__item-container__link'>View menu</p>
-                <span className='Menu-section__list-container__item-container__addon'></span>
-            </div>
-            <div className='Menu-section__list-container__item-container'>
-                <img
-                    className='Menu-section__list-container__item-container__img'
-                    src={require("../../assets/images/desserts.jpg")}
-                    alt="Caramelized slice of bread with blueberries and slices of banana"
-                />
-                <h5 className='Menu-section__list-container__item-container__title'>Desserts</h5>
-                <p className='Menu-section__list-container__item-container__link'>View menu</p>
-                <span className='Menu-section__list-container__item-container__addon'></span>
-            </div>
-            <div className='Menu-section__list-container__item-container'>
-                <img
-                    className='Menu-section__list-container__item-container__img'
-                    src={require("../../assets/images/fresh_breads.jpg")}
-                    alt="Slice of bread followed by grapes and oatmeal"
-                />
-                <h5 className='Menu-section__list-container__item-container__title'>Fresh breads</h5>
-                <p className='Menu-section__list-container__item-container__link'>View menu</p>
-                <span className='Menu-section__list-container__item-container__addon'></span>
-            </div>
+            <div className='Menu-section__extra-info-container__addon'></div>
         </div>
     </section>
   )

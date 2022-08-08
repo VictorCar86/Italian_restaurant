@@ -68,3 +68,13 @@ body {
     font-size: 3rem;
     color: var(--deepgold);
 }
+.description {
+    letter-spacing: 1px;
+}
+
+.line-addon {
+    width: 115px;
+    height: 1px;
+    margin: 20px;
+    background-color: var(--deepgold);
+}
