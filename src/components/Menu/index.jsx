@@ -5,8 +5,8 @@ import PlatesMenu from '../PlatesMenu'
 const Menu = () => {
   return (
     <section className='Menu-section'>
-        <h2 className='Menu-section__title title'>Menu</h2>
-        <span className='title__addon'></span>
+        <h2 className='Menu-section__title title' id="menu">Menu</h2>
+        <div className='title__addon'></div>
         <p className='description'>Discover the taste</p>
         <div className='Menu-section__list-container'>
             <PlatesMenu

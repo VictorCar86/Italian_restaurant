@@ -11,3 +11,27 @@
     object-fit: cover;
     object-position: 0% 35%;
 }
+
+.MenuItemPage-main__nav__ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    padding-bottom: 90px;
+}
+.MenuItemPage-main__nav__ul__item {
+    display: inline-block;
+    padding: 0 10px;
+}
+.MenuItemPage-main {
+    padding: 0 14%;
+}
+.MenuItemPage-main__title::after {
+    content: "Breakfast";
+}
+.MenuItemPage-main__description {
+    font-size: 1.8rem;
+    margin: -10px 2px 0;
+    color: var(--deepgold);
+    font-weight: 100;
+}
