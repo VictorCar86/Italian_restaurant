@@ -19,7 +19,6 @@
 .Item-container__link {
     letter-spacing: 1px;
     transition: color 0.5s;
-    cursor: pointer;
 }
 .Item-container__link:hover {
     transition: color 0.5s;
@@ -29,5 +28,6 @@
     display: inline-block;
     width: 110px;
     height: 1px;
+    margin-bottom: 2px;
     background-color: var(--deepgold);
 }

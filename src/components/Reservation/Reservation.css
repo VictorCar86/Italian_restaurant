@@ -1,6 +1,0 @@
-.Reservation-section {
-    padding: 0 14%;
-}
-.Reservation-section__title::after {
-    content: "Reservation";
-}

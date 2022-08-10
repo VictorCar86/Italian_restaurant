@@ -12,6 +12,10 @@
 }
 .Menu-section__list-container article:nth-child(even) {
     border-left: 1px solid var(--deepgold);
+    padding-left: 45px;
+}
+.Menu-section__list-container article:nth-child(odd) {
+    padding-right: 45px;
 }
 .Menu-section__list-container article:nth-child(1),
 .Menu-section__list-container article:nth-child(2) {

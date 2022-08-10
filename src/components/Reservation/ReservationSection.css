@@ -1,0 +1,30 @@
+.Reservation-section {
+    margin: 0 14%;
+    border-bottom: 1px solid var(--deepgold);
+}
+.Reservation-section__title::after {
+    content: "Reservation";
+}
+.Reservation-section__relevant-description {
+    text-align: center;
+}
+.Reservation-section__relevant-description__img {
+    width: 75px;
+}
+.Reservation-section__relevant-description__addon {
+    width: 170px;
+    height: 1px;
+    margin: 20px auto 40px;
+    background-color: var(--deepgold);
+}
+.Reservation-section__relevant-description p {
+    margin-bottom: 20px;
+    color: var(--deepgold);
+}
+.Reservation-section__relevant-description span {
+    display: inline-block;
+    margin: 15px 0 40px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--deepgold);
+}

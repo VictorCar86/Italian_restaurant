@@ -1,0 +1,27 @@
+.Search-form-reservation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 270px;
+    padding: 110px 0;
+}
+.Search-form-reservation__input {
+    height: 40px;
+    width: 180px;
+    margin: 0 7px;
+    padding-left: 2px;
+    border: 1px solid var(--deepgold);
+    background-color: transparent;
+    color: #ffffff87;
+    cursor: pointer;
+}
+.Search-form-reservation__input option {
+    color: white;
+    background-color: var(--deepgold);
+}
+.Search-form-reservation__input option:first-child {
+    font-weight: bold;
+}
+.Search-form-reservation__button {
+    text-align: center;
+}

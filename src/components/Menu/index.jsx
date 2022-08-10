@@ -11,13 +11,14 @@ const Menu = () => {
         <div className='Menu-section__list-container'>
             <PlatesMenu
                 imgSrc={require("../../assets/images/entries.jpg")}
-                alt={"Table with jam, chesse, strawberrys and grapes"}
-                title={"Entries"}
+                alt={"Table with jam, cheese, strawberries and grapes"}
+                title={"Entrees"}
             />
             <PlatesMenu
                 imgSrc={require("../../assets/images/breakfast.jpg")}
                 alt={"Cooked eggs with avocado and bread"}
                 title={"Breakfast"}
+                linkTo={"breakfast"}
             />
             <PlatesMenu
                 imgSrc={require("../../assets/images/lunch_set_menu.jpg")}
@@ -31,12 +32,12 @@ const Menu = () => {
             />
             <PlatesMenu
                 imgSrc={require("../../assets/images/specialty_pastas.jpg")}
-                alt={"Fettuccine with meat and chesse"}
+                alt={"Fettuccine with meat and cheese"}
                 title={"Specialty pastas"}
             />
             <PlatesMenu
                 imgSrc={require("../../assets/images/pizza.jpg")}
-                alt={"Handmade pizza of chicken, chesse and pineapple"}
+                alt={"Handmade pizza of chicken, cheese and pineapple"}
                 title={"Pizza"}
             />
             <PlatesMenu
