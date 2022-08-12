@@ -1,9 +1,5 @@
 .Menu-section {
-    padding: 0 14%;
     margin-bottom: 200px;
-}
-.Menu-section__title::after {
-    content: "Menu";
 }
 .Menu-section__list-container {
     display: grid;

@@ -1,0 +1,34 @@
+.Title-container {
+    position: relative;
+}
+.Title-container__title {
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: "The Seasons", sans-serif;
+    color: var(--deepgold);
+}
+.Title-container__title-shadow {
+    position: absolute;
+    width: max-content;
+    top: -103px;
+    left: 2px;
+    z-index: -1;
+    font-size: 14rem;
+    font-family: "The Seasons", sans-serif;
+    color: #051425;
+}
+.Title-container__addon {
+    display: inline-block;
+    height: 1px;
+    width: 220px;
+    margin: 4px 0 0px 15px;
+    background-color: var(--deepgold);
+}
+.Title-container__addon::before {
+    content: ".";
+    position: relative;
+    bottom: 28px;
+    right: 13px;
+    font-size: 3rem;
+    color: var(--deepgold);
+}

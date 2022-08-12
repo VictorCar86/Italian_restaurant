@@ -13,7 +13,7 @@ const MainPage = () => {
       <header>
         <Navbar />
       </header>
-      <main>
+      <main className='MainPage__main-section'>
         <MainPresentation />
         <AboutUs />
         <Menu />

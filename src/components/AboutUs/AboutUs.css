@@ -1,18 +1,14 @@
-.AbousUs-container {
+.AboutUs-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 140px 0 50px;
-    padding: 0px 10%;
 }
-.AbousUs-container__main-description {
+.AboutUs-container__main-description {
     position: relative;
     margin-right: 50px;
 }
-.AbousUs-container__main-description__title::after {
-    content: "About us";
-}
-.AbousUs-container__main-description__info {
+.AboutUs-container__main-description__info {
     position: relative;
     width: 306px;
     bottom: 12px;
@@ -20,15 +16,15 @@
     line-height: 2;
     letter-spacing: 1px;
 }
-.AbousUs-container__hero {
+.AboutUs-container__hero {
     position: relative;
     width: 950px;
     min-width: 400px;
 }
-.AbousUs-container__hero__img {
+.AboutUs-container__hero__img {
     width: 100%;
 }
-.AbousUs-container__hero__info {
+.AboutUs-container__hero__info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +37,7 @@
     transform: translate(-50%, 0);
     background-color: #80694e;
 }
-.AbousUs-container__hero__info__description {
+.AboutUs-container__hero__info__description {
     text-align: center;
     width: 255px;
     line-height: 26px;

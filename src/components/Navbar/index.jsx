@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Navbar.css"
 import { Link } from "react-router-dom"
+import { HashLink } from 'react-router-hash-link'
 
 const Navbar = ({special = false}) => {
   return (
@@ -11,9 +12,9 @@ const Navbar = ({special = false}) => {
         <ul className='navbar__list-item'>
             <li>about restaurant</li>
             <li>
-              <Link to="/#menu">
+              <HashLink smooth to="/#menu">
                 menu
-              </Link>
+              </HashLink>
             </li>
             <li>team</li>
             <li>wine&cocktail bar</li>

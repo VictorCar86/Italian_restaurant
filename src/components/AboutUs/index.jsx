@@ -1,25 +1,25 @@
 import React from 'react'
 import "./AboutUs.css"
+import Title from '../Title'
 
 const AboutUs = () => {
   return (
-    <section className='AbousUs-section'>
-        <div className='AbousUs-container'>
-            <aside className='AbousUs-container__main-description'>
-                <h2 className='AbousUs-container__main-description__title title'>About us</h2>
-                <span className='title__addon'></span>
-                <p className='AbousUs-container__main-description__info'>
+    <section className='AboutUs-section'>
+        <div className='AboutUs-container'>
+            <aside className='AboutUs-container__main-description'>
+                <Title title={"About Us"} />
+                <p className='AboutUs-container__main-description__info'>
                     Our restaurant has become <br />
                     synonymous with high-quality <br />
                     Italian cuisine, served in a stylish <br />
                     yet casual setting.
                 </p>
             </aside>
-            <div className='AbousUs-container__hero'>
-                <img className='AbousUs-container__hero__img' src={require("../../assets/images/pylyp-sukhenko-chef-unsplash.jpg")} alt="A chef cutting vegetables" />
-                <div className='AbousUs-container__hero__info'>
+            <div className='AboutUs-container__hero'>
+                <img className='AboutUs-container__hero__img' src={require("../../assets/images/pylyp-sukhenko-chef-unsplash.jpg")} alt="A chef cutting vegetables" />
+                <div className='AboutUs-container__hero__info'>
                     <span className='line-addon'></span>
-                    <p className='AbousUs-container__hero__info__description'>
+                    <p className='AboutUs-container__hero__info__description'>
                         Our dishes are based on
                         classic recipes from all over
                         Italy, these wonderful

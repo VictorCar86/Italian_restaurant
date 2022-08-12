@@ -3,9 +3,9 @@
 }
 .MainPresentation__gallery {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 60px 0 25px;
-    padding: 0 10%;
+    padding: 0 20px;
 }
 .MainPresentation__gallery__aside {
     position: relative;
@@ -61,7 +61,7 @@
 }
 .MainPresentation__contact-info-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     column-gap: 25%;
     padding: 0 10px;
