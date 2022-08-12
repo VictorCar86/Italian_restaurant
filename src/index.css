@@ -44,6 +44,7 @@ a {
 .title {
     position: relative;
     font-size: 5rem;
+    font-weight: 500;
     font-family: "The Seasons", sans-serif;
     color: var(--deepgold);
 }

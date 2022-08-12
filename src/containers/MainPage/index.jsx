@@ -4,8 +4,8 @@ import Navbar from '../../components/Navbar'
 import MainPresentation from '../../components/MainPresentation'
 import AboutUs from '../../components/AboutUs'
 import Menu from '../../components/Menu'
-import Reservation from '../../components/Reservation'
 import ReservationFormSearch from '../../components/ReservationFormSearch'
+import ReservationSection from '../../components/ReservationSection'
 
 const MainPage = () => {
   return (
@@ -17,9 +17,9 @@ const MainPage = () => {
         <MainPresentation />
         <AboutUs />
         <Menu />
-        <Reservation>
+        <ReservationSection>
           <ReservationFormSearch />
-        </Reservation>
+        </ReservationSection>
       </main>
       <footer>
         <Navbar />

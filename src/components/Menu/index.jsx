@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Menu.css"
 import PlatesMenu from '../PlatesMenu'
+import ArticleInfo from '../ArticleInfo'
 
 const Menu = () => {
   return (
@@ -51,24 +52,16 @@ const Menu = () => {
                 title={"Fresh breads"}
             />
         </div>
-        <div className='Menu-section__extra-info-container'>
-            <img
-                className='Menu-section__extra-info-container__img'
-                src={require("../../assets/images/fallon-travels.jpg")}
-                alt="Restaurant image"
-            />
-            <div className='Menu-section__extra-info-container__text-container'>
-                <div className='line-addon'></div>
-                <span className='Menu-section__extra-info-container__text-container__text'>
-                    You are always welcome
-                    in our restaurant and <br />
-                    we are happy to add your
-                    requests to our menu
-                </span>
-                <div className='line-addon'></div>
-            </div>
-            <div className='Menu-section__extra-info-container__addon'></div>
-        </div>
+        <ArticleInfo
+            img={require("../../assets/images/fallon-travels.jpg")}
+            altImg={"Restaurant image"}
+            description={
+                `You are always welcome
+                in our restaurant and ${<br />}
+                we are happy to add your
+                requests to our menu`
+            }
+        />
     </section>
   )
 }
