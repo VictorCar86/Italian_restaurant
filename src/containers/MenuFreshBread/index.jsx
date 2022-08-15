@@ -27,28 +27,29 @@ const MenuFreshBread = () => {
           />
         }
     >
+      {/* Scalable menu with a call from APIs */}
         <ItemMenu
-            title={"Bacon and eggs"}
+            title={"Ciabatta"}
             price={"$99"}
             description={"Organic bacon with your choice of eggs with fresh pumpkin and sourdough"}
         />
         <ItemMenu
-            title={"Big breakfast"}
+            title={"Pane Toscano"}
             price={"$99"}
             description={"Bacon, sausages, eggs, fresh tomato and spinach"}
         />
         <ItemMenu
-            title={"Poached eggs and avocado"}
+            title={"Focaccia"}
             price={"$99"}
             description={"Banana bread with your choice of spread and sausage"}
         />
         <ItemMenu
-            title={"Gino"}
+            title={"Certosino"}
             price={"$99"}
             description={"Sauteed spinach&mushrooms with cheddar"}
         />
         <ItemMenu
-            title={"Fresh toast"}
+            title={"Buccellato di Lucca"}
             price={"$99"}
             description={"Fresh toast With Bacon Strips"}
         />

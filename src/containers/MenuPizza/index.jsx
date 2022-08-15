@@ -16,41 +16,38 @@ const MenuPizza = () => {
             img={require("../../assets/images/desserts.jpg")}
             altImg={"Toasted bread with grapes and butter"}
             description={<>
-                Breakfast is everything.
-                the beginning. the first
-                thing. it is the mouthful
-                that is the commitment
-                to a new day. <br />
-                A continuing life
+                Our menu includes many Italian favorites such as our
+                old-world style pizza pies to sweet perfection!
               </>
             }
           />
         }
     >
+      {/* Scalable menu with a call from APIs */}
         <ItemMenu
-            title={"Bacon and eggs"}
-            price={"$99"}
-            description={"Organic bacon with your choice of eggs with fresh pumpkin and sourdough"}
+            title={"White Clam Pie"}
+            price={"$18.99"}
+            description={"Chopped clams, garlic and mozzarella"}
         />
         <ItemMenu
-            title={"Big breakfast"}
-            price={"$99"}
-            description={"Bacon, sausages, eggs, fresh tomato and spinach"}
+            title={"Parma Pie"}
+            price={"$20.50"}
+            description={"Hand tossed zesty arugula piled high with shavings of fresh parmigiano, prosciutto and white beans"}
         />
         <ItemMenu
-            title={"Poached eggs and avocado"}
-            price={"$99"}
-            description={"Banana bread with your choice of spread and sausage"}
+            title={"Veggie Pie"}
+            price={"$16.95"}
+            description={"Choice of three roasted and selected vegetables"}
         />
         <ItemMenu
-            title={"Gino"}
-            price={"$99"}
-            description={"Sauteed spinach&mushrooms with cheddar"}
+            title={"Four Seasons"}
+            price={"$19.99"}
+            description={"Choice of one classic topping on each ¼ of pie"}
         />
         <ItemMenu
-            title={"Fresh toast"}
-            price={"$99"}
-            description={"Fresh toast With Bacon Strips"}
+            title={"Garlic Shrimp Pie"}
+            price={"$21.50"}
+            description={"Shrimp, garlic, light sauce and mozzarella"}
         />
     </MenuItemPage>
   )

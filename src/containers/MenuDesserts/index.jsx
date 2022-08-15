@@ -16,41 +16,39 @@ const MenuDesserts = () => {
             img={require("../../assets/images/desserts.jpg")}
             altImg={"Toasted bread with grapes and butter"}
             description={<>
-                Breakfast is everything.
-                the beginning. the first
-                thing. it is the mouthful
-                that is the commitment
-                to a new day. <br />
-                A continuing life
+                There's nothing like the joy that comes from baked goods.
+                It can make any occasion feel extra special, from birthdays to anniversaries
+                to potlucks and everyday dinners.
               </>
             }
           />
         }
     >
+      {/* Scalable menu with a call from APIs */}
         <ItemMenu
-            title={"Bacon and eggs"}
-            price={"$99"}
-            description={"Organic bacon with your choice of eggs with fresh pumpkin and sourdough"}
+            title={"Cherries jubilee"}
+            price={"$12.50"}
+            description={"Black Cherries sautéed in butter, sugar and a touch of blackberry brandy with vanilla ice cream"}
         />
         <ItemMenu
-            title={"Big breakfast"}
-            price={"$99"}
-            description={"Bacon, sausages, eggs, fresh tomato and spinach"}
+            title={"Tiramisu"}
+            price={"$11.99"}
+            description={"A traditional Italian dessert with lady finers soaked in espresso and amaretto and layered with Mascarpone cheese"}
         />
         <ItemMenu
-            title={"Poached eggs and avocado"}
-            price={"$99"}
-            description={"Banana bread with your choice of spread and sausage"}
+            title={"Torta di formaggio"}
+            price={"$10.50"}
+            description={"Italian Style Cheesecake, topped with caramel and almonds"}
         />
         <ItemMenu
-            title={"Gino"}
-            price={"$99"}
-            description={"Sauteed spinach&mushrooms with cheddar"}
+            title={"Lava di cioccolato"}
+            price={"$13.99"}
+            description={"The decadent, soft centered, chocolate lava cake served with vanilla ice cream"}
         />
         <ItemMenu
-            title={"Fresh toast"}
-            price={"$99"}
-            description={"Fresh toast With Bacon Strips"}
+            title={"Cannoli"}
+            price={"$10.50"}
+            description={"Pastry shell filled with ricotta, chocolate chips, vanilla, sugar, and orange"}
         />
     </MenuItemPage>
   )

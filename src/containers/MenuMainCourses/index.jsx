@@ -16,41 +16,38 @@ const MenuMainCourses = () => {
             img={require("../../assets/images/desserts.jpg")}
             altImg={"Toasted bread with grapes and butter"}
             description={<>
-                Breakfast is everything.
-                the beginning. the first
-                thing. it is the mouthful
-                that is the commitment
-                to a new day. <br />
-                A continuing life
+                Dishes enjoyed for generations in villages throughout Italy inspire our
+                menu, giving La Regina its authentic Italian fare.
               </>
             }
           />
         }
     >
+      {/* Scalable menu with a call from APIs */}
         <ItemMenu
-            title={"Bacon and eggs"}
-            price={"$99"}
-            description={"Organic bacon with your choice of eggs with fresh pumpkin and sourdough"}
+            title={"Baked Cavitini"}
+            price={"$16.99"}
+            description={"Plate of Ziti, mushrooms, onions, green peppers and our homemade tomato sauce and melted mozzarella"}
         />
         <ItemMenu
-            title={"Big breakfast"}
-            price={"$99"}
-            description={"Bacon, sausages, eggs, fresh tomato and spinach"}
+            title={"Chicken Parmigiana"}
+            price={"$21.50"}
+            description={"Lightly breaded, tender chicken breast covered in our homestyle tomato sauce and topped with mozzarella cheese"}
         />
         <ItemMenu
-            title={"Poached eggs and avocado"}
-            price={"$99"}
-            description={"Banana bread with your choice of spread and sausage"}
+            title={"Baked Fish"}
+            price={"$18.50"}
+            description={"Haddock fish, sautéed in garlic lemon butter"}
         />
         <ItemMenu
-            title={"Gino"}
-            price={"$99"}
-            description={"Sauteed spinach&mushrooms with cheddar"}
+            title={"Chicken Cacciatore"}
+            price={"$22.99"}
+            description={"Cubes of tender chicken in a special mushroom, green pepper and onion sauce"}
         />
         <ItemMenu
-            title={"Fresh toast"}
-            price={"$99"}
-            description={"Fresh toast With Bacon Strips"}
+            title={"Filetto al Pepe Verde"}
+            price={"$39.99"}
+            description={"Angus filet mignon finshed in a green peppercorn and brandy cream sauce"}
         />
     </MenuItemPage>
   )

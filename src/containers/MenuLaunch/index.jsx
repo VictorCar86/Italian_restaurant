@@ -16,41 +16,39 @@ const MenuLaunch = () => {
             img={require("../../assets/images/desserts.jpg")}
             altImg={"Toasted bread with grapes and butter"}
             description={<>
-                Breakfast is everything.
-                the beginning. the first
-                thing. it is the mouthful
-                that is the commitment
-                to a new day. <br />
-                A continuing life
+                From easy Italian soup recipes to swift yet
+                filling meals. These Italian lunch recipes are
+                quick to make for you and pretty delicious to eat.
               </>
             }
           />
         }
     >
+      {/* Scalable menu with a call from APIs */}
         <ItemMenu
-            title={"Bacon and eggs"}
-            price={"$99"}
-            description={"Organic bacon with your choice of eggs with fresh pumpkin and sourdough"}
+            title={"Italian Turkey Club"}
+            price={"$12.50"}
+            description={"Fresh roasted turkey and bacon with lettuce, tomato, and mayonnaise on toasted multi grain bread"}
         />
         <ItemMenu
-            title={"Big breakfast"}
-            price={"$99"}
-            description={"Bacon, sausages, eggs, fresh tomato and spinach"}
+            title={"Insalata Alla Greca"}
+            price={"$13.50"}
+            description={"Traditional Greek salad with feta cheese, kalamata olives, tomatoes, onions and cucumbers"}
         />
         <ItemMenu
-            title={"Poached eggs and avocado"}
-            price={"$99"}
-            description={"Banana bread with your choice of spread and sausage"}
+            title={"Blackened Shrimp"}
+            price={"$16.50"}
+            description={"Fresh baby greens with onions, tomatoes, carrots, toasted almonds, gorgonzola cheese and blackened shrimp"}
         />
         <ItemMenu
-            title={"Gino"}
-            price={"$99"}
-            description={"Sauteed spinach&mushrooms with cheddar"}
+            title={"Insalata con Tonno"}
+            price={"$14.50"}
+            description={"Fresh spring mix topped with sesame crusted ahi tuna and sesame ginger dressing"}
         />
         <ItemMenu
-            title={"Fresh toast"}
-            price={"$99"}
-            description={"Fresh toast With Bacon Strips"}
+            title={"Soup and House Salad"}
+            price={"$13.50"}
+            description={"Tomatoes, onions, cucumbers, and carrots with white zinfandel dressing and croutons"}
         />
     </MenuItemPage>
   )

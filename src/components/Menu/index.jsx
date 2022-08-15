@@ -11,7 +11,7 @@ const Menu = () => {
         <p className='description'>Discover the taste</p>
         <div className='Menu-section__list-container'>
             <PlatesMenu
-                imgSrc={require("../../assets/images/entries.jpg")}
+                imgSrc={require("../../assets/images/entrees.jpg")}
                 alt={"Table with jam, cheese, strawberries and grapes"}
                 title={"Entrees"}
                 linkTo={"entrees"}

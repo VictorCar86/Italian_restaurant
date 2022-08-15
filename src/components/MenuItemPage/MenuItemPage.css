@@ -10,9 +10,13 @@
     position: absolute;
     z-index: -1;
     object-fit: cover;
-    object-position: 0% 35%;
+    object-position: 0% 50%;
 }
 
+.MenuItemPage-main {
+    padding: 0 14%;
+    overflow: hidden;
+}
 .MenuItemPage-main__nav__ul {
     display: flex;
     align-items: center;
@@ -27,21 +31,15 @@
 .MenuItemPage-main__nav__ul__item--actual {
     color: var(--deepgold);
 }
-.MenuItemPage-main {
-    padding: 0 14%;
-}
-.MenuItemPage-main__title::after {
-    content: "Breakfast";
+
+.MenuItemPage-main__menu-items-section {
+    margin: 100px 0;
 }
 .MenuItemPage-main__description {
     font-size: 1.8rem;
     margin: -10px 2px 0;
     color: var(--deepgold);
     font-weight: 100;
-}
-
-.MenuItemPage-main__menu-items-section {
-    margin: 100px 0;
 }
 
 .MenuItemPage-main__recommendation {

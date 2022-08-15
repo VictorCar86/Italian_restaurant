@@ -16,41 +16,39 @@ const MenuPastas = () => {
             img={require("../../assets/images/desserts.jpg")}
             altImg={"Toasted bread with grapes and butter"}
             description={<>
-                Breakfast is everything.
-                the beginning. the first
-                thing. it is the mouthful
-                that is the commitment
-                to a new day. <br />
-                A continuing life
+                Pasta satisfies our every craving, whether that be for classic or innovative flavors;
+                can be jazzed up for a multi-step meal or made all in one pot;
+                and goes great with all the best seasonal flavors
               </>
             }
           />
         }
     >
+      {/* Scalable menu with a call from APIs */}
         <ItemMenu
-            title={"Bacon and eggs"}
-            price={"$99"}
-            description={"Organic bacon with your choice of eggs with fresh pumpkin and sourdough"}
+            title={"Fettuccini Alfredo"}
+            price={"$15.25"}
+            description={"Thick, creamy white garlic and butter sauce with romano cheese"}
         />
         <ItemMenu
-            title={"Big breakfast"}
-            price={"$99"}
-            description={"Bacon, sausages, eggs, fresh tomato and spinach"}
+            title={"Rotontini di Zucca"}
+            price={"$24.00"}
+            description={"Jumbo Ravioli filled with butternut squash, sage, and thyme in a Amaretto cream sauce"}
         />
         <ItemMenu
-            title={"Poached eggs and avocado"}
-            price={"$99"}
-            description={"Banana bread with your choice of spread and sausage"}
+            title={"Ravioli Di Manzo"}
+            price={"$26.50"}
+            description={"Ravioli Stuffed with braised beef in a mushroom marsala cream sauce"}
         />
         <ItemMenu
-            title={"Gino"}
-            price={"$99"}
-            description={"Sauteed spinach&mushrooms with cheddar"}
+            title={"Rigatoni All\’ Amatriciana"}
+            price={"$23.50"}
+            description={"Rigatoni pasta sautéed with cured pork cheek, onion, pecorino cheese and pomodorini sauce"}
         />
         <ItemMenu
-            title={"Fresh toast"}
-            price={"$99"}
-            description={"Fresh toast With Bacon Strips"}
+            title={"Pasta Broccoli"}
+            price={"$14.99"}
+            description={"Served with Ziti in a garlic and Butter Sauce, topped with Fresh-Grated Romano Cheese"}
         />
     </MenuItemPage>
   )
