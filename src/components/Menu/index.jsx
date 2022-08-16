@@ -35,7 +35,7 @@ const Menu = () => {
                 linkTo={"courses"}
             />
             <PlatesMenu
-                imgSrc={require("../../assets/images/specialty_pastas.jpg")}
+                imgSrc={require("../../assets/images/specialty-pastas.jpg")}
                 alt={"Fettuccine with meat and cheese"}
                 title={"Specialty pastas"}
                 linkTo={"pastas"}

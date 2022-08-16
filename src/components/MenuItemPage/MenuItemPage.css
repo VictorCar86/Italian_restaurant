@@ -1,22 +1,4 @@
-.MenuItemPage-header {
-    position: relative;
-    height: 360px;
-}
-.MenuItemPage-header__img {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    opacity: 0.7;
-    position: absolute;
-    z-index: -1;
-    object-fit: cover;
-    object-position: 0% 50%;
-}
 
-.MenuItemPage-main {
-    padding: 0 14%;
-    overflow: hidden;
-}
 .MenuItemPage-main__nav__ul {
     display: flex;
     align-items: center;
@@ -40,34 +22,6 @@
     margin: -10px 2px 0;
     color: var(--deepgold);
     font-weight: 100;
-}
-
-.MenuItemPage-main__recommendation {
-    width: 380px;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 35px;
-    font-size: 2rem;
-}
-.MenuItemPage-main__recommendation-addon {
-    position: relative;
-    width: 550px;
-    height: 1px;
-    margin: 20px auto;
-    background-color: var(--deepgold);
-}
-.MenuItemPage-main__recommendation-addon::before,
-.MenuItemPage-main__recommendation-addon::after {
-    content: ".";
-    position: absolute;
-    bottom: -6px;
-    right: -10px;
-    font-size: 2.5rem;
-    color: var(--deepgold);
-}
-.MenuItemPage-main .MenuItemPage-main__recommendation-addon::after {
-    right: 0;
-    left: -10px;
 }
 
 .MenuItemPage-main__article-container {

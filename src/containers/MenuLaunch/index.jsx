@@ -7,13 +7,13 @@ import ArticleInfo from '../../components/ArticleInfo'
 const MenuLaunch = () => {
   return (
     <MenuItemPage
-        plateImg={require("../../assets/images/lunch_set_menu.jpg")}
+        plateImg={require("../../assets/images/lunch_set_menu-big.jpg")}
         plateImgAlt={"Plate with mushrooms, lettuce and bread"}
         title={"Launch Set Menu"}
         schedule={"10:00 am - 23:00 pm 7 days"}
         article={
         <ArticleInfo
-            img={require("../../assets/images/desserts.jpg")}
+            img={require("../../assets/images/article-lunch-set-menu-big.jpg")}
             altImg={"Toasted bread with grapes and butter"}
             description={<>
                 From easy Italian soup recipes to swift yet

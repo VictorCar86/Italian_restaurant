@@ -7,13 +7,13 @@ import ArticleInfo from '../../components/ArticleInfo'
 const MenuDesserts = () => {
   return (
     <MenuItemPage
-        plateImg={require("../../assets/images/desserts.jpg")}
+        plateImg={require("../../assets/images/desserts-big.jpg")}
         plateImgAlt={"Caramelized slice of bread with blueberries and slices of banana"}
         title={"Desserts"}
         schedule={"10:00 am - 23:00 pm 7 days"}
         article={
         <ArticleInfo
-            img={require("../../assets/images/desserts.jpg")}
+            img={require("../../assets/images/article-desserts-big.jpg")}
             altImg={"Toasted bread with grapes and butter"}
             description={<>
                 There's nothing like the joy that comes from baked goods.

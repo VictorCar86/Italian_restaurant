@@ -1,0 +1,27 @@
+.DescriptionInfo {
+    width: 380px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 35px;
+    font-size: 2rem;
+}
+.DescriptionInfo-addon {
+    position: relative;
+    width: 550px;
+    height: 1px;
+    margin: 20px auto;
+    background-color: var(--deepgold);
+}
+.DescriptionInfo-addon::before,
+.DescriptionInfo-addon::after {
+    content: ".";
+    position: absolute;
+    bottom: -6px;
+    right: -10px;
+    font-size: 2.5rem;
+    color: var(--deepgold);
+}
+.DescriptionInfo-addon::after {
+    right: 0;
+    left: -10px;
+}

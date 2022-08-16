@@ -7,13 +7,13 @@ import ArticleInfo from '../../components/ArticleInfo'
 const MenuMainCourses = () => {
   return (
     <MenuItemPage
-        plateImg={require("../../assets/images/main_courses.jpg")}
+        plateImg={require("../../assets/images/main_courses-big.jpg")}
         plateImgAlt={"Roasted meat with zucchini, tomato and fine herbs"}
         title={"Main Courses"}
         schedule={"12:00 am - 23:00 pm 7 days"}
         article={
         <ArticleInfo
-            img={require("../../assets/images/desserts.jpg")}
+            img={require("../../assets/images/article-main_courses-big.jpg")}
             altImg={"Toasted bread with grapes and butter"}
             description={<>
                 Dishes enjoyed for generations in villages throughout Italy inspire our

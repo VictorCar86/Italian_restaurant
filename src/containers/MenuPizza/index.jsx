@@ -7,13 +7,13 @@ import ArticleInfo from '../../components/ArticleInfo'
 const MenuPizza = () => {
   return (
     <MenuItemPage
-        plateImg={require("../../assets/images/pizza.jpg")}
+        plateImg={require("../../assets/images/pizza-big.jpg")}
         plateImgAlt={"Handmade pizza of chicken, cheese and pineapple"}
         title={"Pizza"}
         schedule={"12:00 am - 22:00 pm 7 days"}
         article={
         <ArticleInfo
-            img={require("../../assets/images/desserts.jpg")}
+            img={require("../../assets/images/article-pizza-big.jpg")}
             altImg={"Toasted bread with grapes and butter"}
             description={<>
                 Our menu includes many Italian favorites such as our

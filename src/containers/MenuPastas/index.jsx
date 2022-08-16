@@ -7,13 +7,13 @@ import ArticleInfo from '../../components/ArticleInfo'
 const MenuPastas = () => {
   return (
     <MenuItemPage
-        plateImg={require("../../assets/images/specialty_pastas.jpg")}
+        plateImg={require("../../assets/images/specialty-pastas-big.jpg")}
         plateImgAlt={"Fettuccine with meat and cheese"}
         title={"Specialty Pastas"}
         schedule={"14:00 am - 20:00 pm 7 days"}
         article={
         <ArticleInfo
-            img={require("../../assets/images/desserts.jpg")}
+            img={require("../../assets/images/article-specialty-pastas-big.jpg")}
             altImg={"Toasted bread with grapes and butter"}
             description={<>
                 Pasta satisfies our every craving, whether that be for classic or innovative flavors;
