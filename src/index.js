@@ -12,6 +12,7 @@ import MenuPastas from "./containers/MenuPastas";
 import MenuPizza from "./containers/MenuPizza";
 import MenuDesserts from "./containers/MenuDesserts";
 import MenuFreshBread from "./containers/MenuFreshBread";
+import WineCocktailPage from "./components/WineCocktailPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -28,6 +29,7 @@ root.render(
                 <Route path="pizza" element={<MenuPizza />}/>
                 <Route path="desserts" element={<MenuDesserts />}/>
                 <Route path="breads" element={<MenuFreshBread />}/>
+                <Route path="wine-cocktail" element={<WineCocktailPage />}/>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

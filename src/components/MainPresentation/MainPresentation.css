@@ -4,6 +4,7 @@
 .MainPresentation__gallery {
     display: flex;
     justify-content: space-between;
+    height: 485px;
     margin: 60px 0 25px;
     padding: 0 20px;
 }
@@ -71,14 +72,6 @@
     justify-content: space-between;
     align-items: center;
     width: 150px;
-}
-.MainPresentation__social-media-container__svg {
-    width: 16px;
-    fill: var(--deepgold);
-    cursor: pointer;
-}
-.MainPresentation__social-media-container__svg--email {
-    width: 23px;
 }
 .MainPresentation__contacts-container__info {
     position: relative;

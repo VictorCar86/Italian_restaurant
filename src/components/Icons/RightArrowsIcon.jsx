@@ -1,8 +1,8 @@
 import React from "react"
 
-function RightArrows(){
+function RightArrowsIcon(){
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="10px" height="15px" style={{paddingTop: "5px"}} viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" fill="#b5986d">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="10px" height="15px" style={{paddingTop: "5px", margin: "0 5px"}} viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" fill="#b5986d">
             <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
                 <path d="M1179 4027 c-64 -34 -102 -93 -107 -166 -8 -112 -33 -83 601 -718 l582 -583 -582 -583 c-634 -635 -609 -606 -601 -718 8 -110 93 -189 206 -189 29 0 70 7 90 17 42 18 1314 1280 1365 1353 36 52 47 133 27 196 -10 32 -142 169 -679 707 -446 447 -679 674 -707 687 -57 28 -138 27 -195 -3z"/>
                 <path d="M2485 4021 c-104 -48 -153 -173 -110 -279 11 -26 192 -213 588 -609 l572 -573 -581 -582 c-635 -636 -610 -607 -602 -719 8 -110 93 -189 206 -189 29 0 70 7 90 17 24 10 277 255 695 672 504 503 663 668 682 705 29 58 32 119 10 174 -22 51 -1323 1356 -1380 1383 -51 24 -119 24 -170 0z"/>
@@ -11,4 +11,4 @@ function RightArrows(){
     )
 }
 
-export default RightArrows
+export default RightArrowsIcon

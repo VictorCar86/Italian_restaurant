@@ -26,23 +26,24 @@ a {
     font-family: "The Seasons";
     font-style: normal;
     font-weight: 100;
-    src: url("./fonts/Fontspring-DEMO-theseasons-lt.otf");
+    src: url("./fonts/The-Seasons-Light.ttf");
 }
 @font-face {
     font-family: "The Seasons";
     font-style: normal;
     font-weight: 500;
-    src: url("./fonts/Fontspring-DEMO-theseasons-reg.otf");
+    src: url("./fonts/The-Seasons-Regular.ttf");
 }
 @font-face {
     font-family: "The Seasons";
     font-style: normal;
     font-weight: 700;
-    src: url("./fonts/Fontspring-DEMO-theseasons-bd.otf");
+    src: url("./fonts/The-Seasons-Bold.ttf");
 }
 
 .description {
     letter-spacing: 1px;
+    line-height: 30px;
 }
 
 .line-addon {

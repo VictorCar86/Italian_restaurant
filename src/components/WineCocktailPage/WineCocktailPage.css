@@ -1,0 +1,14 @@
+.WineCocktailPage__description {
+    display: flex;
+    align-items: center;
+    margin: 150px 0;
+}
+.WineCocktailPage__description__img {
+    height: 500px;
+    width: 520px;
+    object-fit: cover;
+    object-position: center;
+}
+.WineCocktailPage__description__info {
+    width: 380px;
+}
