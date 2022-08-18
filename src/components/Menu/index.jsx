@@ -60,8 +60,8 @@ const Menu = () => {
             />
         </div>
         <ArticleInfo
-            img={require("../../assets/images/fallon-travels.jpg")}
-            altImg={"Restaurant image"}
+            imgSrc={require("../../assets/images/fallon-travels.jpg")}
+            imgAlt={"Restaurant image"}
             description={<>
                     You are always welcome
                     in our restaurant and <br />

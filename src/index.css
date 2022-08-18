@@ -52,3 +52,25 @@ a {
     margin: 20px;
     background-color: var(--deepgold);
 }
+
+.Item-title {
+    margin: 45px 0 30px;
+    font-size: 3rem;
+    font-family: 'The Seasons', sans-serif;
+    color: var(--deepgold);
+}
+.Item-link {
+    letter-spacing: 1px;
+    transition: color 0.5s;
+}
+.Item-link:hover {
+    transition: color 0.5s;
+    color: var(--deepgold);
+}
+.Item-addon {
+    display: inline-block;
+    width: 110px;
+    height: 1px;
+    margin-bottom: 2px;
+    background-color: var(--deepgold);
+}

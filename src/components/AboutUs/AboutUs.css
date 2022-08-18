@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 370px;
-    margin: 140px 0 50px;
+    height: 574px;
+    margin-top: 140px;
+    padding-bottom: 50px;
 }
 .AboutUs-container__main-description {
     position: relative;

@@ -1,13 +1,13 @@
 import React from 'react'
 import "./ArticleInfo.css"
 
-const ArticleInfo = ({ img, altImg, description }) => {
+const ArticleInfo = ({ imgSrc, imgAlt, description }) => {
   return (
     <article className='ArticleInfo'>
         <img
             className='ArticleInfo__img'
-            src={img}
-            alt={altImg}
+            src={imgSrc}
+            alt={imgAlt}
         />
         <div className='ArticleInfo__text-container'>
             <div className='line-addon'></div>

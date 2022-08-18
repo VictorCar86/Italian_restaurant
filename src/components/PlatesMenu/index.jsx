@@ -4,19 +4,19 @@ import { Link } from "react-router-dom"
 
 const PlatesMenu = ({ title, alt, imgSrc, linkTo = "/" }) => {
   return (
-    <article className='Item-container'>
+    <article className='PlatesMenu-container'>
         <img
-            className='Item-container__img'
+            className='PlatesMenu-container__img'
             src={imgSrc}
             alt={alt}
         />
-        <h5 className='Item-container__title'>{title}</h5>
-        <p className='Item-container__link'>
+        <h5 className='Item-title'>{title}</h5>
+        <p className='Item-link'>
           <Link to={linkTo}>
             View menu
           </Link>
         </p>
-        <span className='Item-container__addon'></span>
+        <span className='Item-addon'></span>
     </article>
   )
 }

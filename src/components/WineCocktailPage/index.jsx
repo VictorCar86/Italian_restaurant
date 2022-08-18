@@ -1,12 +1,63 @@
 import React from 'react'
 import "./WineCocktailPage.css"
+import { Link } from "react-router-dom"
 import PageTemplate from '../PageTemplate'
 import SecondaryNav from '../SecondaryNav'
 import Title from '../Title'
+import DescriptionInfo from "../DescriptionInfo"
+import ArticleInfo from "../ArticleInfo"
+import ReservationSection from "../ReservationSection"
+import ReservationFormSearch from "../ReservationFormSearch"
 
 const WineCocktailPage = () => {
 
   const title = "Wine&cocktail bar";
+
+  const winesInfo = [
+    {
+      title: "Italy",
+      imgSrc: require("../../assets/images/wines-italy.jpg"),
+      imgAlt: "",
+      linkTo: "/wine-cocktail/italy",
+    },
+    {
+      title: "Spain",
+      imgSrc: require("../../assets/images/wines-spain.jpg"),
+      imgAlt: "",
+      linkTo: "",
+    },
+    {
+      title: "France",
+      imgSrc: require("../../assets/images/wines-france.jpg"),
+      imgAlt: "",
+      linkTo: "",
+    },
+    {
+      title: "Portugal",
+      imgSrc: require("../../assets/images/wines-portugal.jpg"),
+      imgAlt: "",
+      linkTo: "",
+    },
+  ];
+
+  function createWines(winesArray){
+    return winesArray.map((wine, index) => {
+      return (
+        <li className='WineCocktailPage__slider-wines__ul__li' key={index}>
+          <article className='WineCocktailPage__slider-wines__ul__li__article'>
+            <img className='WineCocktailPage__slider-wines__ul__li__article__img' src={wine.imgSrc} alt={wine.imgAlt} />
+            <h5 className='Item-title'>{wine.title}</h5>
+            <p className='Item-link'>
+              <Link to={wine.linkTo}>
+                View menu
+              </Link>
+            </p>
+            <div className='Item-addon'></div>
+          </article>
+        </li>
+      )
+    })
+  }
 
   return (
     <PageTemplate
@@ -31,6 +82,20 @@ const WineCocktailPage = () => {
           value
         </span>
       </article>
+      <DescriptionInfo description={"Choose The Country You Like"} />
+      <section className='WineCocktailPage__slider-wines'>
+        <ul className='WineCocktailPage__slider-wines__ul'>
+          {!!winesInfo && createWines(winesInfo)}
+        </ul>
+      </section>
+      <DescriptionInfo description={"For any dietary requirements please ask your waiter or waitress"} />
+      <ArticleInfo
+        imgSrc={require("../../assets/images/article-wine&cocktail-big.jpg")}
+        description={"The best wine is the wine that the person who drinks it likes best"}
+      />
+      <ReservationSection>
+        <ReservationFormSearch />
+      </ReservationSection>
     </PageTemplate>
   )
 }
