@@ -1,0 +1,14 @@
+.ItalyWineCocktail-navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+.ItalyWineCocktail-navbar label {
+    position: relative;
+    height: max-content;
+}
+.ItalyWineCocktail-navbar label input {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+}

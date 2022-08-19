@@ -3,14 +3,14 @@ import "./MainPresentation.css"
 import FacebookIcon from '../Icons/FacebookIcon'
 import InstagramIcon from '../Icons/InstagramIcon'
 import EmailIcon from '../Icons/EmailIcon'
+import PseudoButton from '../PseudoButton'
 
 const MainPresentation = () => {
   return (
     <section className='MainPresentation'>
         <div className='MainPresentation__gallery'>
             <aside className='MainPresentation__gallery__aside'>
-                <span className='MainPresentation__gallery__link'>taste gallery</span>
-                <span className='MainPresentation__gallery__addon'></span>
+                <PseudoButton text={"taste gallery"} linkTo="#" />
             </aside>
             <img
               className='MainPresentation__gallery__image'
@@ -25,10 +25,7 @@ const MainPresentation = () => {
             <EmailIcon />
           </section>
           <section className='MainPresentation__contacts-container'>
-            <aside className='MainPresentation__contacts-container__info'>
-                <span className='MainPresentation__contacts-container__link'>contacts</span>
-                <span className='MainPresentation__contacts-container__addon'></span>
-            </aside>
+            <PseudoButton text={"contacts"} linkTo="#" />
           </section>
         </article>
         <div className='MainPresentation__main-description'>

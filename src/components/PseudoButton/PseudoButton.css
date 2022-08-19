@@ -1,0 +1,35 @@
+.PseudoButton {
+    display: block;
+    width: 160px;
+    all: inherit;
+}
+.PseudoButton-info {
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.PseudoButton-info:hover {
+    color: var(--deepgold);
+    transition: color 0.5s;
+}
+.PseudoButton-info::after {
+    margin-left: 15px;
+    content: "+";
+    font-size: 1.2rem;
+    color: var(--deepgold);
+}
+.PseudoButton-addon {
+    position: relative;
+    display: block;
+    height: 1px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: var(--deepgold);
+}
+.PseudoButton-addon::after {
+    position: absolute;
+    content: ".";
+    bottom: -6px;
+    left: 150px;
+    font-size: 2.5rem;
+    color: var(--deepgold);
+}

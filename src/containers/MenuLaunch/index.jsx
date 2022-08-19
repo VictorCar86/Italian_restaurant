@@ -1,6 +1,6 @@
 import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
-import ItemMenu from '../../components/ItemMenu'
+import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
 
 
@@ -13,8 +13,8 @@ const MenuLaunch = () => {
         schedule={"10:00 am - 23:00 pm 7 days"}
         article={
         <ArticleInfo
-            img={require("../../assets/images/article-lunch-set-menu-big.jpg")}
-            altImg={"Toasted bread with grapes and butter"}
+            imgSrc={require("../../assets/images/article-lunch-set-menu-big.jpg")}
+            imgAlt={"Toasted bread with grapes and butter"}
             description={<>
                 From easy Italian soup recipes to swift yet
                 filling meals. These Italian lunch recipes are
@@ -25,27 +25,27 @@ const MenuLaunch = () => {
         }
     >
       {/* Scalable menu with a call from APIs */}
-        <ItemMenu
+        <ItemFoodMenu
             title={"Italian Turkey Club"}
             price={"$12.50"}
             description={"Fresh roasted turkey and bacon with lettuce, tomato, and mayonnaise on toasted multi grain bread"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Insalata Alla Greca"}
             price={"$13.50"}
             description={"Traditional Greek salad with feta cheese, kalamata olives, tomatoes, onions and cucumbers"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Blackened Shrimp"}
             price={"$16.50"}
             description={"Fresh baby greens with onions, tomatoes, carrots, toasted almonds, gorgonzola cheese and blackened shrimp"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Insalata con Tonno"}
             price={"$14.50"}
             description={"Fresh spring mix topped with sesame crusted ahi tuna and sesame ginger dressing"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Soup and House Salad"}
             price={"$13.50"}
             description={"Tomatoes, onions, cucumbers, and carrots with white zinfandel dressing and croutons"}

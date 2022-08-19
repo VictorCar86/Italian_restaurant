@@ -1,6 +1,6 @@
 import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
-import ItemMenu from '../../components/ItemMenu'
+import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
 
 
@@ -13,8 +13,8 @@ const MenuPizza = () => {
         schedule={"12:00 am - 22:00 pm 7 days"}
         article={
         <ArticleInfo
-            img={require("../../assets/images/article-pizza-big.jpg")}
-            altImg={"Toasted bread with grapes and butter"}
+            imgSrc={require("../../assets/images/article-pizza-big.jpg")}
+            imgAlt={"Toasted bread with grapes and butter"}
             description={<>
                 Our menu includes many Italian favorites such as our
                 old-world style pizza pies to sweet perfection!
@@ -24,27 +24,27 @@ const MenuPizza = () => {
         }
     >
       {/* Scalable menu with a call from APIs */}
-        <ItemMenu
+        <ItemFoodMenu
             title={"White Clam Pie"}
             price={"$18.99"}
             description={"Chopped clams, garlic and mozzarella"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Parma Pie"}
             price={"$20.50"}
             description={"Hand tossed zesty arugula piled high with shavings of fresh parmigiano, prosciutto and white beans"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Veggie Pie"}
             price={"$16.95"}
             description={"Choice of three roasted and selected vegetables"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Four Seasons"}
             price={"$19.99"}
             description={"Choice of one classic topping on each ¼ of pie"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Garlic Shrimp Pie"}
             price={"$21.50"}
             description={"Shrimp, garlic, light sauce and mozzarella"}

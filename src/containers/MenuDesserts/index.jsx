@@ -1,6 +1,6 @@
 import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
-import ItemMenu from '../../components/ItemMenu'
+import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
 
 
@@ -13,8 +13,8 @@ const MenuDesserts = () => {
         schedule={"10:00 am - 23:00 pm 7 days"}
         article={
         <ArticleInfo
-            img={require("../../assets/images/article-desserts-big.jpg")}
-            altImg={"Toasted bread with grapes and butter"}
+            imgSrc={require("../../assets/images/article-desserts-big.jpg")}
+            imgAlt={"Toasted bread with grapes and butter"}
             description={<>
                 There's nothing like the joy that comes from baked goods.
                 It can make any occasion feel extra special, from birthdays to anniversaries
@@ -25,27 +25,27 @@ const MenuDesserts = () => {
         }
     >
       {/* Scalable menu with a call from APIs */}
-        <ItemMenu
+        <ItemFoodMenu
             title={"Cherries jubilee"}
             price={"$12.50"}
             description={"Black Cherries sautéed in butter, sugar and a touch of blackberry brandy with vanilla ice cream"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Tiramisu"}
             price={"$11.99"}
             description={"A traditional Italian dessert with lady finers soaked in espresso and amaretto and layered with Mascarpone cheese"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Torta di formaggio"}
             price={"$10.50"}
             description={"Italian Style Cheesecake, topped with caramel and almonds"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Lava di cioccolato"}
             price={"$13.99"}
             description={"The decadent, soft centered, chocolate lava cake served with vanilla ice cream"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Cannoli"}
             price={"$10.50"}
             description={"Pastry shell filled with ricotta, chocolate chips, vanilla, sugar, and orange"}

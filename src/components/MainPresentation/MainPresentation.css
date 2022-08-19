@@ -11,43 +11,8 @@
 .MainPresentation__gallery__aside {
     position: relative;
     align-self: flex-end;
-    width: 160px;
     padding-bottom: 80px;
     margin-right: 50px;
-}
-.MainPresentation__gallery__link,
-.MainPresentation__contacts-container__link {
-    cursor: pointer;
-    transition: color 0.5s;
-}
-.MainPresentation__gallery__link:hover,
-.MainPresentation__contacts-container__link:hover {
-    color: var(--deepgold);
-    transition: color 0.5s;
-}
-.MainPresentation__gallery__link::after,
-.MainPresentation__contacts-container__link::after {
-    margin-left: 15px;
-    content: "+";
-    font-size: 1.2rem;
-    color: var(--deepgold);
-}
-.MainPresentation__gallery__addon,
-.MainPresentation__contacts-container__addon {
-    position: relative;
-    display: block;
-    height: 1px;
-    width: 150px;
-    margin-top: 10px;
-    background-color: var(--deepgold);
-}
-.MainPresentation__gallery__addon::after {
-    position: absolute;
-    content: ".";
-    bottom: -6px;
-    left: 150px;
-    font-size: 2.5rem;
-    color: var(--deepgold);
 }
 .MainPresentation__gallery__image {
     width: 950px;
@@ -73,21 +38,6 @@
     align-items: center;
     width: 150px;
 }
-.MainPresentation__contacts-container__info {
-    position: relative;
-    width: 160px;
-}
-.MainPresentation__contacts-container__addon::after {
-    position: absolute;
-    content: ".";
-    height: 1px;
-    width: 2px;
-    bottom: 23px;
-    right: -2px;
-    font-size: 2.5rem;
-    color: var(--deepgold);
-}
-
 .MainPresentation__main-description {
     position: absolute;
     top: 40%;

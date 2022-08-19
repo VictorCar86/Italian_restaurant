@@ -1,6 +1,6 @@
 import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
-import ItemMenu from '../../components/ItemMenu'
+import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
 
 
@@ -13,8 +13,8 @@ const MenuFreshBread = () => {
         schedule={"10:00 am - 18:00 pm 7 days"}
         article={
         <ArticleInfo
-            img={require("../../assets/images/article-fresh_bread-big.jpg")}
-            altImg={"Toasted bread with grapes and butter"}
+            imgSrc={require("../../assets/images/article-fresh_bread-big.jpg")}
+            imgAlt={"Toasted bread with grapes and butter"}
             description={<>
                 Italy has an incredible variety of breads,
                 with many regional versions of flatbread,
@@ -27,27 +27,27 @@ const MenuFreshBread = () => {
         }
     >
       {/* Scalable menu with a call from APIs */}
-        <ItemMenu
+        <ItemFoodMenu
             title={"Ciabatta"}
             price={"$8.25"}
             description={"Soft white bread made from wheat flour, water, salt, yeast and olive oil"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Pane Toscano"}
             price={"$7.50"}
             description={"Slat-free drizzled bread with olive oil and smeared with mashed garlic"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Focaccia"}
             price={"$8.75"}
             description={"Flat leavened oven-baked bread brushed or sprinkled with olive oil, coarse salt"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Certosino"}
             price={"$9.25"}
             description={"Sweet bread that contains almonds, pine nuts, cocoa powder, dark chocolate, honey, and candied fruit"}
         />
-        <ItemMenu
+        <ItemFoodMenu
             title={"Buccellato di Lucca"}
             price={"$10.99"}
             description={"Bread prepared in the shape of a ring, its interior is filled with raisins and aniseed, while the exterior with a combination of sugar and eggs"}
