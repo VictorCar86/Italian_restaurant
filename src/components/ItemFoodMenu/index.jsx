@@ -6,7 +6,7 @@ const ItemFoodMenu = ({ title, price, description }) => {
     <article className='ItemFoodMenu'>
         <h3 className='ItemFoodMenu__title'>{title}</h3>
         <span className='ItemFoodMenu__price'>{price}</span>
-        <div className='ItemFoodMenu__addon'></div>
+        <div className='huge-divisor-addon'></div>
         <p className='ItemFoodMenu__description'>{description}</p>
     </article>
   )

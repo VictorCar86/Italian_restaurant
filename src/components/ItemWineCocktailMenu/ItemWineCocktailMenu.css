@@ -1,0 +1,22 @@
+.ItemWineCocktailMenu-container {
+    margin-bottom: 80px;
+}
+.ItemWineCocktailMenu-container__title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.ItemWineCocktailMenu-container__vintage,
+.ItemWineCocktailMenu-container__price,
+.ItemWineCocktailMenu-container__description {
+    display: inline-block;
+    font-size: 2rem;
+}
+.ItemWineCocktailMenu-container__vintage,
+.ItemWineCocktailMenu-container__price {
+    margin-right: 30px;
+}
+.ItemWineCocktailMenu-container__price {
+    margin-left: 15px;
+    color: var(--deepgold);
+}

@@ -1,13 +1,13 @@
 import React from 'react'
 import "./WineCocktailPage.css"
 import { Link } from "react-router-dom"
-import PageTemplate from '../PageTemplate'
-import SecondaryNav from '../SecondaryNav'
-import Title from '../Title'
-import DescriptionInfo from "../DescriptionInfo"
-import ArticleInfo from "../ArticleInfo"
-import ReservationSection from "../ReservationSection"
-import ReservationFormSearch from "../ReservationFormSearch"
+import PageTemplate from '../../components/PageTemplate'
+import SecondaryNav from '../../components/SecondaryNav'
+import Title from '../../components/Title'
+import DescriptionInfo from "../../components/DescriptionInfo"
+import ArticleInfo from "../../components/ArticleInfo"
+import ReservationSection from "../../components/ReservationSection"
+import ReservationFormSearch from "../../components/ReservationFormSearch"
 
 const WineCocktailPage = () => {
 

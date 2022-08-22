@@ -1,14 +1,26 @@
-.ItalyWineCocktail-navbar {
+.ItalyWineCocktail__accordion {
+    width: 75px;
+    margin: 50px 0;
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.ItalyWineCocktail__navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 70px;
 }
-.ItalyWineCocktail-navbar label {
+.ItalyWineCocktail__navbar label {
     position: relative;
     height: max-content;
 }
-.ItalyWineCocktail-navbar label input {
+.ItalyWineCocktail__navbar label input {
     position: absolute;
     visibility: hidden;
     top: 0;
+}
+.ItalyWineCocktail__menu-section {
+    min-height: 600px;
 }
