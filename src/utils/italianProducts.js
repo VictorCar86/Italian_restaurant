@@ -1,4 +1,4 @@
-const products = [
+const italianProducts = [
     {
         title: "Lugana Riserva \"Cutulliano\", Pratello, Veneto",
         year: 2018,
@@ -161,4 +161,4 @@ const products = [
     },
 ];
 
-export default products
+export default italianProducts

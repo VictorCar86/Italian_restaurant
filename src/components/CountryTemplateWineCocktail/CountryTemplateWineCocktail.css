@@ -1,5 +1,4 @@
-.ItalyWineCocktail__accordion {
-    width: 75px;
+.CountryTemplateWineCocktail__accordion {
     margin: 50px 0;
     background-color: transparent;
     color: inherit;
@@ -7,20 +6,24 @@
     font-size: 1.8rem;
     cursor: pointer;
 }
-.ItalyWineCocktail__navbar {
+.CountryTemplateWineCocktail__accordion__option {
+    background-color: var(--deepgold);
+    color: white;
+}
+.CountryTemplateWineCocktail__navbar {
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
 }
-.ItalyWineCocktail__navbar label {
+.CountryTemplateWineCocktail__navbar label {
     position: relative;
     height: max-content;
 }
-.ItalyWineCocktail__navbar label input {
+.CountryTemplateWineCocktail__navbar label input {
     position: absolute;
     visibility: hidden;
     top: 0;
 }
-.ItalyWineCocktail__menu-section {
+.CountryTemplateWineCocktail__menu-section {
     min-height: 600px;
 }

@@ -12,7 +12,7 @@ import MenuPizza from "../containers/MenuPizza";
 import MenuDesserts from "../containers/MenuDesserts";
 import MenuFreshBread from "../containers/MenuFreshBread";
 import WineCocktailPage from "../containers/WineCocktailPage";
-import ItalyWineCocktail from "../containers/ItalyWineCocktail";
+import ItalyWineCocktailPage from '../containers/ItalyWineCocktailPage';
 
 const App = () => {
   return (
@@ -29,7 +29,7 @@ const App = () => {
           <Route path="desserts" element={<MenuDesserts />}/>
           <Route path="breads" element={<MenuFreshBread />}/>
           <Route path="wine-cocktail" element={<WineCocktailPage />}/>
-          <Route path="wine-cocktail/italy" element={<ItalyWineCocktail />}/>
+          <Route path="wine-cocktail/italy" element={<ItalyWineCocktailPage />}/>
       </Routes>
     </BrowserRouter>
   )
