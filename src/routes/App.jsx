@@ -13,6 +13,10 @@ import MenuDesserts from "../containers/MenuDesserts";
 import MenuFreshBread from "../containers/MenuFreshBread";
 import WineCocktailPage from "../containers/WineCocktailPage";
 import ItalyWineCocktailPage from '../containers/ItalyWineCocktailPage';
+import SpainWineCocktailPage from '../containers/SpainWineCocktailPage';
+import FranceWineCocktailPage from '../containers/FranceWineCocktailPage';
+import PortugalWineCocktailPage from '../containers/PortugalWineCocktailPage';
+import ChileWineCocktailPage from '../containers/ChileWineCocktailPage';
 
 const App = () => {
   return (
@@ -30,6 +34,10 @@ const App = () => {
           <Route path="breads" element={<MenuFreshBread />}/>
           <Route path="wine-cocktail" element={<WineCocktailPage />}/>
           <Route path="wine-cocktail/italy" element={<ItalyWineCocktailPage />}/>
+          <Route path="wine-cocktail/spain" element={<SpainWineCocktailPage />}/>
+          <Route path="wine-cocktail/france" element={<FranceWineCocktailPage />}/>
+          <Route path="wine-cocktail/portugal" element={<PortugalWineCocktailPage />}/>
+          <Route path="wine-cocktail/chile" element={<ChileWineCocktailPage />}/>
       </Routes>
     </BrowserRouter>
   )

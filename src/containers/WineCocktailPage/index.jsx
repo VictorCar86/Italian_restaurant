@@ -24,19 +24,25 @@ const WineCocktailPage = () => {
       title: "Spain",
       imgSrc: require("../../assets/images/wines-spain.jpg"),
       imgAlt: "",
-      linkTo: "",
+      linkTo: "/wine-cocktail/spain",
     },
     {
       title: "France",
       imgSrc: require("../../assets/images/wines-france.jpg"),
       imgAlt: "",
-      linkTo: "",
+      linkTo: "/wine-cocktail/france",
     },
     {
       title: "Portugal",
       imgSrc: require("../../assets/images/wines-portugal.jpg"),
       imgAlt: "",
-      linkTo: "",
+      linkTo: "/wine-cocktail/portugal",
+    },
+    {
+      title: "Chile",
+      imgSrc: require("../../assets/images/wines-portugal.jpg"),
+      imgAlt: "",
+      linkTo: "/wine-cocktail/chile",
     },
   ];
 
