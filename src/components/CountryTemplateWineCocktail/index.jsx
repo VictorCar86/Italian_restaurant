@@ -47,8 +47,8 @@ const ItalyWineCocktail = ({ title = "undefined", imgSrc, imgAlt, products }) =>
 
     return (
         <PageTemplate
-        imgSrc={imgSrc}
-        imgAlt={imgAlt}
+            imgSrc={imgSrc}
+            imgAlt={imgAlt}
         >
             <SecondaryNav
                 pages={pages}
@@ -160,9 +160,6 @@ const ItalyWineCocktail = ({ title = "undefined", imgSrc, imgAlt, products }) =>
                     )
                 }
             </section>
-            <ReservationSection>
-                <ReservationFormSearch />
-            </ReservationSection>
         </PageTemplate>
     )
 }

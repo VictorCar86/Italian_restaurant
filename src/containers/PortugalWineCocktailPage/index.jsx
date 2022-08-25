@@ -7,8 +7,8 @@ const PortugalWineCocktailPage = () => {
   return (
     <CountryTemplateWineCocktail
         title='Portugal'
-        imgSrc={require("../../assets/images/spain-wc-big.jpg")}
-        imgAlt={"two glasses of red wine next to a wine bottle"}
+        imgSrc={require("../../assets/images/portugal-wc-big.jpg")}
+        imgAlt={"Selected collevtion of bottles from portugal"}
         products={portugueseProducts}
     />
   )

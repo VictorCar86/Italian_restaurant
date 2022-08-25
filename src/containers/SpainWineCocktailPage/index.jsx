@@ -8,7 +8,7 @@ const SpainWineCocktailPage = () => {
     <CountryTemplateWineCocktail
         title='Spain'
         imgSrc={require("../../assets/images/spain-wc-big.jpg")}
-        imgAlt={"two glasses of red wine next to a wine bottle"}
+        imgAlt={"Showing a bottle's collection of red wine"}
         products={spanishProducts}
     />
   )

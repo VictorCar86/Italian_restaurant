@@ -10,7 +10,7 @@ const MainPresentation = () => {
     <section className='MainPresentation'>
         <div className='MainPresentation__gallery'>
             <aside className='MainPresentation__gallery__aside'>
-                <PseudoButton text={"taste gallery"} linkTo="#" />
+                <PseudoButton text={"taste gallery"} linkTo="/taste-gallery" />
             </aside>
             <img
               className='MainPresentation__gallery__image'

@@ -1,6 +1,8 @@
 import React from 'react'
 import "./PageTemplate.css"
 import Navbar from '../Navbar'
+import ReservationSection from '../ReservationSection'
+import ReservationFormSearch from '../ReservationFormSearch'
 
 const PageTemplate = ({ specialNav, imgSrc, imgAlt, children }) => {
   return (
@@ -11,6 +13,9 @@ const PageTemplate = ({ specialNav, imgSrc, imgAlt, children }) => {
       </header>
       <main className='PageTemplate-main'>
         { children }
+        <ReservationSection>
+          <ReservationFormSearch />
+        </ReservationSection>
       </main>
       <footer>
         <Navbar />

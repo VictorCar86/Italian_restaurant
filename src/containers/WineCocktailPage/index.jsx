@@ -40,7 +40,7 @@ const WineCocktailPage = () => {
     },
     {
       title: "Chile",
-      imgSrc: require("../../assets/images/wines-portugal.jpg"),
+      imgSrc: require("../../assets/images/wines-chile.jpg"),
       imgAlt: "",
       linkTo: "/wine-cocktail/chile",
     },
@@ -99,9 +99,6 @@ const WineCocktailPage = () => {
         imgSrc={require("../../assets/images/article-wine&cocktail-big.jpg")}
         description={"The best wine is the wine that the person who drinks it likes best"}
       />
-      <ReservationSection>
-        <ReservationFormSearch />
-      </ReservationSection>
     </PageTemplate>
   )
 }

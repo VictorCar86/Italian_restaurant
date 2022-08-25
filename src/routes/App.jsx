@@ -17,6 +17,7 @@ import SpainWineCocktailPage from '../containers/SpainWineCocktailPage';
 import FranceWineCocktailPage from '../containers/FranceWineCocktailPage';
 import PortugalWineCocktailPage from '../containers/PortugalWineCocktailPage';
 import ChileWineCocktailPage from '../containers/ChileWineCocktailPage';
+import TasteGalleryPage from '../containers/TasteGalleryPage';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       <ScrollToTop />
       <Routes>
           <Route index element={<MainPage />}/>
+          <Route path="taste-gallery" element={<TasteGalleryPage />}/>
           <Route path="breakfast" element={<MenuBreakfast />}/>
           <Route path="entrees" element={<MenuEntrees />}/>
           <Route path="launch" element={<MenuLaunch />}/>
