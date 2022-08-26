@@ -1,13 +1,19 @@
 import React from 'react'
 import "./WineCocktailPage.css"
 import { Link } from "react-router-dom"
-import PageTemplate from '../../components/PageTemplate'
-import SecondaryNav from '../../components/SecondaryNav'
-import Title from '../../components/Title'
-import DescriptionInfo from "../../components/DescriptionInfo"
-import ArticleInfo from "../../components/ArticleInfo"
-import ReservationSection from "../../components/ReservationSection"
-import ReservationFormSearch from "../../components/ReservationFormSearch"
+import PageTemplate from '@components/PageTemplate'
+import SecondaryNav from '@components/SecondaryNav'
+import Title from '@components/Title'
+import DescriptionInfo from "@components/DescriptionInfo"
+import ArticleInfo from "@components/ArticleInfo"
+import wineItalyImg from '@drinks/wines-italy.jpg'
+import wineSpainImg from '@drinks/wines-spain.jpg'
+import wineFranceImg from '@drinks/wines-france.jpg'
+import winePortugalImg from '@drinks/wines-portugal.jpg'
+import wineChileImg from '@drinks/wines-chile.jpg'
+import wineCocktailBigImg from '@drinks/wine&cocktail-big.jpg'
+import wineCocktailDescImg from '@drinks/desc-wine&cocktail.jpg'
+import wineCocktailArtBigImg from '@articles/article-wine&cocktail-big.jpg'
 
 const WineCocktailPage = () => {
 
@@ -16,31 +22,31 @@ const WineCocktailPage = () => {
   const winesInfo = [
     {
       title: "Italy",
-      imgSrc: require("../../assets/images/wines-italy.jpg"),
+      imgSrc: wineItalyImg,
       imgAlt: "",
       linkTo: "/wine-cocktail/italy",
     },
     {
       title: "Spain",
-      imgSrc: require("../../assets/images/wines-spain.jpg"),
+      imgSrc: wineSpainImg,
       imgAlt: "",
       linkTo: "/wine-cocktail/spain",
     },
     {
       title: "France",
-      imgSrc: require("../../assets/images/wines-france.jpg"),
+      imgSrc: wineFranceImg,
       imgAlt: "",
       linkTo: "/wine-cocktail/france",
     },
     {
       title: "Portugal",
-      imgSrc: require("../../assets/images/wines-portugal.jpg"),
+      imgSrc: winePortugalImg,
       imgAlt: "",
       linkTo: "/wine-cocktail/portugal",
     },
     {
       title: "Chile",
-      imgSrc: require("../../assets/images/wines-chile.jpg"),
+      imgSrc: wineChileImg,
       imgAlt: "",
       linkTo: "/wine-cocktail/chile",
     },
@@ -67,7 +73,7 @@ const WineCocktailPage = () => {
 
   return (
     <PageTemplate
-      imgSrc={require("../../assets/images/wine&cocktail-big.jpg")}
+      imgSrc={wineCocktailBigImg}
       imgAlt={"cocktail with ice"}
     >
       <SecondaryNav titlePage={title} />
@@ -77,7 +83,7 @@ const WineCocktailPage = () => {
         with our head sommelier Ricardo Tolly
       </p>
       <article className='WineCocktailPage__description'>
-        <img className='WineCocktailPage__description__img' src={require("../../assets/images/desc-wine&cocktail.jpg")} alt="Wine collection in front a wall" />
+        <img className='WineCocktailPage__description__img' src={wineCocktailDescImg} alt="Wine collection in front a wall" />
         <span className='WineCocktailPage__description__info description'>
           Our wines, have a strong personality and
           character related to a specific territory,
@@ -96,7 +102,7 @@ const WineCocktailPage = () => {
       </section>
       <DescriptionInfo description={"For any dietary requirements please ask your waiter or waitress"} />
       <ArticleInfo
-        imgSrc={require("../../assets/images/article-wine&cocktail-big.jpg")}
+        imgSrc={wineCocktailArtBigImg}
         description={"The best wine is the wine that the person who drinks it likes best"}
       />
     </PageTemplate>

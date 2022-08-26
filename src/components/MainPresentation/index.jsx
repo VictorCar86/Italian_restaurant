@@ -1,5 +1,6 @@
 import React from 'react'
 import "./MainPresentation.css"
+import restaurantImg from '@addons/fallon-travels.jpg'
 import FacebookIcon from '../Icons/FacebookIcon'
 import InstagramIcon from '../Icons/InstagramIcon'
 import EmailIcon from '../Icons/EmailIcon'
@@ -14,8 +15,8 @@ const MainPresentation = () => {
             </aside>
             <img
               className='MainPresentation__gallery__image'
-              src={require("../../assets/images/fallon-travels.jpg")}
-              alt="Restaurant image"
+              src={restaurantImg}
+              alt="Restaurant decoration from Italy"
             />
         </div>
         <article className='MainPresentation__contact-info-container'>

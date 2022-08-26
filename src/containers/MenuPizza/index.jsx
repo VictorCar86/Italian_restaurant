@@ -2,18 +2,19 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
-
+import pizzaBigImg from '@food/pizza-big.jpg'
+import pizzaArtBigImg from '@articles/article-pizza-big.jpg'
 
 const MenuPizza = () => {
   return (
     <MenuItemPage
-        plateImg={require("../../assets/images/pizza-big.jpg")}
+        plateImg={pizzaBigImg}
         plateImgAlt={"Handmade pizza of chicken, cheese and pineapple"}
         title={"Pizza"}
         schedule={"12:00 am - 22:00 pm 7 days"}
         article={
         <ArticleInfo
-            imgSrc={require("../../assets/images/article-pizza-big.jpg")}
+            imgSrc={pizzaArtBigImg}
             imgAlt={"Toasted bread with grapes and butter"}
             description={<>
                 Our menu includes many Italian favorites such as our

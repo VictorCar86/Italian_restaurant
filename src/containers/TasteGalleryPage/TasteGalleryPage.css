@@ -1,0 +1,28 @@
+.TasteGalleryPage__main-plate__img {
+    width: 100%;
+    height: 90vh;
+    margin-top: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+.TasteGalleryPage__main-plate__addon {
+    position: relative;
+    width: 60%;
+    height: 1px;
+    background-color: var(--deepgold);
+    margin: 40px 0 0 auto;
+}
+.TasteGalleryPage__main-plate__addon::before {
+    position: absolute;
+    content: ".";
+    font-size: 2rem;
+    color: var(--deepgold);
+    top: -18px;
+    left: -10px;
+}
+.TasteGalleryPage__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50%, 25%));
+    margin-top: 30px;
+    margin-bottom: 60px;
+}

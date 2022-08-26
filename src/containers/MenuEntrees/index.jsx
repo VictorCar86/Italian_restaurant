@@ -2,18 +2,19 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
-
+import entreesBigImg from '@food/entrees-big.jpg'
+import entreesArtBigImg from '@articles/article-entrees-big.jpg'
 
 const MenuEntrees = () => {
   return (
     <MenuItemPage
-        plateImg={require("../../assets/images/entrees-big.jpg")}
+        plateImg={entreesBigImg}
         plateImgAlt={"Table with jam, cheese, strawberries and grapes"}
         title={"Entrees"}
         schedule={"12:00 am - 23:00 pm 7 days"}
         article={
         <ArticleInfo
-            imgSrc={require("../../assets/images/article-entree-big.jpg")}
+            imgSrc={entreesArtBigImg}
             imgAlt={"Little fried prawns with chives"}
             description={<>
                 Whet your appetite with these yummy

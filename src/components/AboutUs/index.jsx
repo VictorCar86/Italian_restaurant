@@ -1,6 +1,8 @@
 import React from 'react'
 import "./AboutUs.css"
 import Title from '../Title'
+import chefImg from '@addons/chef-cutting.jpg'
+import musicalImg from '@addons/musical.png'
 
 const AboutUs = () => {
   return (
@@ -16,7 +18,7 @@ const AboutUs = () => {
                 </p>
             </aside>
             <div className='AboutUs-container__hero'>
-                <img className='AboutUs-container__hero__img' src={require("../../assets/images/pylyp-sukhenko-chef-unsplash.jpg")} alt="A chef cutting vegetables" />
+                <img className='AboutUs-container__hero__img' src={chefImg} alt="A chef cutting vegetables" />
                 <div className='AboutUs-container__hero__info'>
                     <span className='line-addon'></span>
                     <p className='AboutUs-container__hero__info__description'>
@@ -41,7 +43,7 @@ const AboutUs = () => {
                 </p>
             </aside>
             <div className='AboutUs-section__extra-info__music-container'>
-                <img className='AboutUs-section__extra-info__music-container__img' src={require("../../assets/images/musical.png")} alt="Musical notes" />
+                <img className='AboutUs-section__extra-info__music-container__img' src={musicalImg} alt="Musical notes" />
                 <span className='AboutUs-section__extra-info__music-container__text'>
                     Our food is like a piece of music
                     each in its place

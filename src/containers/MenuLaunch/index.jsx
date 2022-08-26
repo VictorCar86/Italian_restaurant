@@ -2,18 +2,19 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
-
+import launchSetMenuBigImg from '@food/lunch_set_menu-big.jpg'
+import launchSetMenuArtBigImg from '@articles/article-lunch-set-menu-big.jpg'
 
 const MenuLaunch = () => {
   return (
     <MenuItemPage
-        plateImg={require("../../assets/images/lunch_set_menu-big.jpg")}
+        plateImg={launchSetMenuBigImg}
         plateImgAlt={"Plate with mushrooms, lettuce and bread"}
         title={"Launch Set Menu"}
         schedule={"10:00 am - 23:00 pm 7 days"}
         article={
         <ArticleInfo
-            imgSrc={require("../../assets/images/article-lunch-set-menu-big.jpg")}
+            imgSrc={launchSetMenuArtBigImg}
             imgAlt={"Toasted bread with grapes and butter"}
             description={<>
                 From easy Italian soup recipes to swift yet

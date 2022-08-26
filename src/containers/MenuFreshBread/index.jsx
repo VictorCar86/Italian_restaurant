@@ -2,18 +2,19 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
-
+import freshBreadBigImg from '@food/fresh_breads-big.jpg'
+import freshBreadArtBigImg from '@articles/article-fresh_breads-big.jpg'
 
 const MenuFreshBread = () => {
   return (
     <MenuItemPage
-        plateImg={require("../../assets/images/fresh_breads-big.jpg")}
+        plateImg={freshBreadBigImg}
         plateImgAlt={"Slice of bread followed by grapes and oatmeal"}
         title={"Fresh Bread"}
         schedule={"10:00 am - 18:00 pm 7 days"}
         article={
         <ArticleInfo
-            imgSrc={require("../../assets/images/article-fresh_bread-big.jpg")}
+            imgSrc={freshBreadArtBigImg}
             imgAlt={"Toasted bread with grapes and butter"}
             description={<>
                 Italy has an incredible variety of breads,

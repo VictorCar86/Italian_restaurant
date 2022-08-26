@@ -2,18 +2,19 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
-
+import dessertsBigImg from '@food/desserts-big.jpg'
+import dessertsArtBigImg from '@articles/article-desserts-big.jpg'
 
 const MenuDesserts = () => {
   return (
     <MenuItemPage
-        plateImg={require("../../assets/images/desserts-big.jpg")}
+        plateImg={dessertsBigImg}
         plateImgAlt={"Caramelized slice of bread with blueberries and slices of banana"}
         title={"Desserts"}
         schedule={"10:00 am - 23:00 pm 7 days"}
         article={
         <ArticleInfo
-            imgSrc={require("../../assets/images/article-desserts-big.jpg")}
+            imgSrc={dessertsArtBigImg}
             imgAlt={"Toasted bread with grapes and butter"}
             description={<>
                 There's nothing like the joy that comes from baked goods.

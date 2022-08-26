@@ -2,17 +2,19 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
+import breakfastBigImg from '@food/breakfast-big.jpg'
+import frenchToastArtBigImg from '@articles/article-french-toast-big.jpg'
 
 const MenuBreakfast = () => {
   return (
     <MenuItemPage
-        plateImg={require("../../assets/images/breakfast-big.jpg")}
+        plateImg={breakfastBigImg}
         plateImgAlt={"Cooked eggs with avocado and bread"}
         title={"Breakfast"}
         schedule={"10:00 am - 12:00 pm 7 days"}
         article={
         <ArticleInfo
-            imgSrc={require("../../assets/images/french-toast-big.jpg")}
+            imgSrc={frenchToastArtBigImg}
             imgAlt={"Toasted bread with grapes and butter"}
             description={<>
                 Breakfast is everything.

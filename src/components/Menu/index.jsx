@@ -3,6 +3,15 @@ import "./Menu.css"
 import PlatesMenu from '../PlatesMenu'
 import ArticleInfo from '../ArticleInfo'
 import Title from '../Title'
+import entreesImg from '@food/entrees.jpg'
+import breakfastImg from '@food/breakfast.jpg'
+import launchSetMenuImg from '@food/lunch_set_menu.jpg'
+import mainCoursesImg from '@food/main_courses.jpg'
+import specialtyPastaImg from '@food/specialty-pastas.jpg'
+import pizzaImg from '@food/pizza.jpg'
+import dessertsImg from '@food/desserts.jpg'
+import freshBreadImg from '@food/fresh_breads.jpg'
+import restaurantImg from '@addons/fallon-travels.jpg'
 
 const Menu = () => {
   return (
@@ -11,56 +20,56 @@ const Menu = () => {
         <p className='description'>Discover the taste</p>
         <div className='Menu-section__list-container'>
             <PlatesMenu
-                imgSrc={require("../../assets/images/entrees.jpg")}
+                imgSrc={entreesImg}
                 alt={"Table with jam, cheese, strawberries and grapes"}
                 title={"Entrees"}
                 linkTo={"entrees"}
             />
             <PlatesMenu
-                imgSrc={require("../../assets/images/breakfast.jpg")}
+                imgSrc={breakfastImg}
                 alt={"Cooked eggs with avocado and bread"}
                 title={"Breakfast"}
                 linkTo={"breakfast"}
             />
             <PlatesMenu
-                imgSrc={require("../../assets/images/lunch_set_menu.jpg")}
+                imgSrc={launchSetMenuImg}
                 alt={"Plate with mushrooms, lettuce and bread"}
                 title={"Launch set menu"}
                 linkTo={"launch"}
             />
             <PlatesMenu
-                imgSrc={require("../../assets/images/main_courses.jpg")}
+                imgSrc={mainCoursesImg}
                 alt={"Roasted meat with zucchini, tomato and fine herbs"}
                 title={"Main courses"}
                 linkTo={"courses"}
             />
             <PlatesMenu
-                imgSrc={require("../../assets/images/specialty-pastas.jpg")}
+                imgSrc={specialtyPastaImg}
                 alt={"Fettuccine with meat and cheese"}
                 title={"Specialty pastas"}
                 linkTo={"pastas"}
             />
             <PlatesMenu
-                imgSrc={require("../../assets/images/pizza.jpg")}
+                imgSrc={pizzaImg}
                 alt={"Handmade pizza of chicken, cheese and pineapple"}
                 title={"Pizza"}
                 linkTo={"pizza"}
             />
             <PlatesMenu
-                imgSrc={require("../../assets/images/desserts.jpg")}
+                imgSrc={dessertsImg}
                 alt={"Caramelized slice of bread with blueberries and slices of banana"}
                 title={"Desserts"}
                 linkTo={"desserts"}
                 />
             <PlatesMenu
-                imgSrc={require("../../assets/images/fresh_breads.jpg")}
+                imgSrc={freshBreadImg}
                 alt={"Slice of bread followed by grapes and oatmeal"}
                 title={"Fresh breads"}
                 linkTo={"breads"}
             />
         </div>
         <ArticleInfo
-            imgSrc={require("../../assets/images/fallon-travels.jpg")}
+            imgSrc={restaurantImg}
             imgAlt={"Restaurant image"}
             description={<>
                     You are always welcome

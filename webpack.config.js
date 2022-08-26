@@ -11,6 +11,15 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx"],
+    alias: {
+      "@components": path.resolve(__dirname, 'src/components/'),
+      "@containers": path.resolve(__dirname, 'src/containers/'),
+      "@addons": path.resolve(__dirname, 'src/assets/images/addons/'),
+      "@articles": path.resolve(__dirname, 'src/assets/images/articles/'),
+      "@drinks": path.resolve(__dirname, 'src/assets/images/drinks_items/'),
+      "@food": path.resolve(__dirname, 'src/assets/images/food_items/'),
+      "@gallery": path.resolve(__dirname, 'src/assets/images/gallery_items/'),
+    }
   },
   module: {
     rules: [
@@ -35,7 +44,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(gif|png|jpe?g)$/,
+        test: /\.(png|jp(e*)g|svg|gif)$/,
         type: "asset/resource",
         generator: {
           filename: "assets/[name][hash][ext]"

@@ -2,18 +2,19 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
-
+import mainCoursesBigImg from '@food/main_courses-big.jpg'
+import mainCoursesArtBigImg from '@articles/article-main_courses-big.jpg'
 
 const MenuMainCourses = () => {
   return (
     <MenuItemPage
-        plateImg={require("../../assets/images/main_courses-big.jpg")}
+        plateImg={mainCoursesBigImg}
         plateImgAlt={"Roasted meat with zucchini, tomato and fine herbs"}
         title={"Main Courses"}
         schedule={"12:00 am - 23:00 pm 7 days"}
         article={
         <ArticleInfo
-            imgSrc={require("../../assets/images/article-main_courses-big.jpg")}
+            imgSrc={mainCoursesArtBigImg}
             imgAlt={"Toasted bread with grapes and butter"}
             description={<>
                 Dishes enjoyed for generations in villages throughout Italy inspire our

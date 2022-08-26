@@ -1,6 +1,7 @@
 import React from 'react'
 import "./ReservationSection.css"
 import Title from '../Title'
+import reginaLogoImg from '@addons/la-regina-logo.png'
 
 const ReservationSection = ({ children }) => {
   return (
@@ -9,7 +10,7 @@ const ReservationSection = ({ children }) => {
         <p className='description'>Welcome your visit</p>
         <div className='Reservation-section__relevant-description'>
           { children }
-          <img className='Reservation-section__relevant-description__img' src={require("../../assets/images/la-regina-logo.png")} alt="La regina logo" />
+          <img className='Reservation-section__relevant-description__img' src={reginaLogoImg} alt="La regina logo" />
           <div className='Reservation-section__relevant-description__addon'></div>
           <p>La Regina restaurant & fine dining, Via garibaldi 27</p>
           <p>47037 Rimini, Italy restaurant@laregina.com</p>
