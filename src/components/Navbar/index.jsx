@@ -23,7 +23,11 @@ const Navbar = ({special = false}) => {
                 wine&cocktail bar
               </HashLink>
             </li>
-            <li className={special ? "navbar__list-item--special" : "navbar__list-item--reserve"}>reservation</li>
+            <li className={special ? "navbar__list-item--special" : "navbar__list-item--reserve"}>
+              <Link to="/reservation">
+                reservation
+              </Link>
+            </li>
         </ul>
     </nav>
   )

@@ -1,5 +1,4 @@
 import React from 'react'
-import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "../hooks/ScrollToTop";
 import MainPage from "../containers/MainPage";
@@ -18,6 +17,9 @@ import FranceWineCocktailPage from '../containers/FranceWineCocktailPage';
 import PortugalWineCocktailPage from '../containers/PortugalWineCocktailPage';
 import ChileWineCocktailPage from '../containers/ChileWineCocktailPage';
 import TasteGalleryPage from '../containers/TasteGalleryPage';
+import ReservationFirstPage from '../containers/ReservationFirstPage';
+import ReservationDataPage from '../containers/ReservationDataPage';
+import ReservationFormPage from '../containers/ReservationFormPage';
 
 const App = () => {
   return (
@@ -40,6 +42,9 @@ const App = () => {
           <Route path="wine-cocktail/france" element={<FranceWineCocktailPage />}/>
           <Route path="wine-cocktail/portugal" element={<PortugalWineCocktailPage />}/>
           <Route path="wine-cocktail/chile" element={<ChileWineCocktailPage />}/>
+          <Route path="reservation" element={<ReservationFirstPage />}/>
+          <Route path="reservation/data" element={<ReservationDataPage />}/>
+          <Route path="reservation/data/form" element={<ReservationFormPage />}/>
       </Routes>
     </BrowserRouter>
   )

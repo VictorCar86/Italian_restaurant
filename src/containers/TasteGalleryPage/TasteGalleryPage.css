@@ -25,7 +25,7 @@
     min-width: 657px;
     display: grid;
     grid-template-columns: repeat(2, minmax(50%, 25%));
-    grid-template-rows: 9% 16% 21% 4% 25%;
+    grid-template-rows: minmax(50px, 200px) auto minmax(350px, 500px) minmax(40px, 85px) minmax(50px, 600px);
     grid-template-areas:
         "gallery-1 text-2"
         "gallery-1 gallery-4"
@@ -35,7 +35,7 @@
     gap: 20px;
     position: relative;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     line-height: 2;
     letter-spacing: 1px;
 }
@@ -81,4 +81,11 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+@media (max-width: 850px) {
+    .TasteGalleryPage__grid {
+        display: grid;
+        grid-auto-flow: column;
+    }
 }
