@@ -22,16 +22,18 @@ const ReservationFormPage = () => {
         <Navbar />
         <main className='ReservationFormPage__main'>
           <SecondaryNav pages={pages} titlePage='Form' />
-          <ReservationSection>
+          <ReservationSection special="true" >
             <section>
-                <h3>Wednesday, 10 May-19:00</h3>
-                <input type="text" placeholder='name' />
-                <input type="email" placeholder='e-mail' name="" id="" />
-                <input type="tel" placeholder='phone' name="" id="" />
-                <input type="date" name="" id="" />
-                <h3>Summary</h3>
-                <h4>Expect 2 guests on May 10 at 7:30 p.m.</h4>
-                <button type='button'>Submit</button>
+                <form action="#" onSubmit={event => event.preventDefault()}>
+                  <h3>Wednesday, 10 May-19:00</h3>
+                  <input type="text" placeholder='name' />
+                  <input type="email" placeholder='e-mail' name="" id="" />
+                  <input type="tel" placeholder='phone' name="" id="" />
+                  <input type="date" name="" id="" />
+                  <h3>Summary</h3>
+                  <h3>Expect 2 guests on May 10 at 7:30 p.m.</h3>
+                  <button type='submit'>Submit</button>
+                </form>
             </section>
           </ReservationSection>
         </main>

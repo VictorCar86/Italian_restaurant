@@ -11,7 +11,7 @@ const ReservationFirstPage = () => {
         <Navbar />
         <main className='ReservationFirstPage__main'>
           <SecondaryNav titlePage='Reservation' />
-          <ReservationSection>
+          <ReservationSection special="true" >
             <ReservationFormSearch />
           </ReservationSection>
         </main>
