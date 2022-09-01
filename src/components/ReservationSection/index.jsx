@@ -5,7 +5,7 @@ import reginaLogoImg from '@addons/la-regina-logo.png'
 
 const ReservationSection = ({ children, special = false }) => {
   return (
-    <section className={!special && 'Reservation-section'}>
+    <section className={!special ? 'Reservation-section' : ""}>
         <Title title={"Reservation"} />
         <p className='description'>Welcome your visit</p>
         <div className="Reservation-section__relevant-description">

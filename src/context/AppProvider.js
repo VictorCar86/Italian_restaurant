@@ -1,30 +1,14 @@
 import React, { createContext, useState } from "react";
+import useInitialState from "../hooks/useInitialState";
 
 export const AppContext = createContext();
 
 function AppProvider({ children }){
 
-    function contextState(){
-        const initialState = {
-            guest: undefined,
-            date: undefined,
-            time: undefined,
-            hour: undefined,
-            name: undefined,
-            email: undefined,
-            phone: undefined,
-            birthday: undefined,
-        }
-
-        const [state, setState] = useState(initialState)
-
-        return {state, setState}
-    }
-
-    const resolveContextState = contextState()
+    const contextState = useInitialState()
 
     return (
-        <AppContext.Provider value={ resolveContextState }>
+        <AppContext.Provider value={ contextState }>
             { children }
         </AppContext.Provider>
     )

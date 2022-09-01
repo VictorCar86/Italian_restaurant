@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ScrollToTop from "../hooks/ScrollToTop";
+import ScrollToTop from "../utils/scrollToTop";
 import MainPage from "../containers/MainPage";
 import MenuBreakfast from "../containers/MenuBreakfast";
 import MenuEntrees from "../containers/MenuEntrees";
