@@ -1,0 +1,9 @@
+.GoBackSection {
+    margin: 10vh 0;
+}
+.GoBackSection__text {
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 30px;
+}

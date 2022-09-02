@@ -1,6 +1,9 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
+import "./ReservationDataSection.css"
+import { useNavigate } from 'react-router-dom';
+import GenericButton from '../GenericButton';
 
-const ReservationDataSection = ({ state }) => {
+const ReservationDataSection = ({ state, setState }) => {
 
     const avaliableTime = {
         AM: [
@@ -25,6 +28,12 @@ const ReservationDataSection = ({ state }) => {
         ]
     }
 
+    const [active, setActive] = useState(null)
+
+    function updateActive(elemt){
+        setActive(elemt)
+    }
+
     function createLabels(data, time){
         let actualTime = "";
 
@@ -36,7 +45,15 @@ const ReservationDataSection = ({ state }) => {
         }
 
         return data[actualTime].map((avaliable, index) => (
-            <label htmlFor={avaliable} key={index}>
+            <label
+                className={
+                    active === avaliable ?
+                    "ReservationDataSection__grid__label ReservationDataSection__grid__label--active" :
+                    "ReservationDataSection__grid__label" }
+                htmlFor={avaliable}
+                key={index}
+                onClick={() => updateActive(avaliable)}
+            >
                 {avaliable}
                 <input
                     type="radio"
@@ -49,6 +66,8 @@ const ReservationDataSection = ({ state }) => {
     }
 
     const form = useRef(null)
+
+    const navigator = useNavigate()
 
     function updateState(){
         const formData = new FormData(form.current)
@@ -68,15 +87,22 @@ const ReservationDataSection = ({ state }) => {
     }
 
     return (
-        <form action='#' ref={form} onSubmit={event => event.preventDefault()}>
-            <h3>{state.date}</h3>
-            {state.time === "AM" && (
-                createLabels(avaliableTime, state.time)
-            )}
-            {state.time === "PM" && (
-                createLabels(avaliableTime, state.time)
-            )}
-            <button type='submit' onClick={updateState} >Submit</button>
+        <form
+            action='#'
+            className='ReservationDataSection'
+            ref={form}
+            onSubmit={event => event.preventDefault()}
+        >
+            <h3 className='ReservationDataSection__info'>{state.date}</h3>
+            <section className='ReservationDataSection__grid'>
+                {state.time === "AM" && (
+                    createLabels(avaliableTime, state.time)
+                )}
+                {state.time === "PM" && (
+                    createLabels(avaliableTime, state.time)
+                )}
+            </section>
+            <GenericButton text='Submit' onClick={updateState} />
         </form>
     )
 }

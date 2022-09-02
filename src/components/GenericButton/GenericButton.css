@@ -1,0 +1,12 @@
+.GenericButton {
+    display: block;
+    background-color: transparent;
+    padding: 10px 50px;
+    margin: 40px auto;
+    border: 1px solid var(--deepgold);
+    color: inherit;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 30px;
+    cursor: pointer;
+}
