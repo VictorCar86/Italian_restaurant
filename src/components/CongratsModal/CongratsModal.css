@@ -1,0 +1,20 @@
+.CongratsModal {
+    position: relative;
+    display: inline-block;
+}
+.CongratsModal__info {
+    width: 92%;
+    height: 83%;
+    position: absolute;
+    top: 0;
+    margin: 25px 20px;
+    border: 2px solid var(--deepgold);
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 2.5rem;
+}
+.CongratsModal__info__img {
+    width: 60px;
+    margin: 30px 0;
+}

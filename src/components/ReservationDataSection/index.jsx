@@ -93,7 +93,7 @@ const ReservationDataSection = ({ state, setState }) => {
             ref={form}
             onSubmit={event => event.preventDefault()}
         >
-            <h3 className='ReservationDataSection__info'>{state.date}</h3>
+            <h3 className='Title-reservation-pages'>{state.date}</h3>
             <section className='ReservationDataSection__grid'>
                 {state.time === "AM" && (
                     createLabels(avaliableTime, state.time)

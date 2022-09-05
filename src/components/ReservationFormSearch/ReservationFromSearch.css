@@ -6,14 +6,20 @@
     padding: 110px 0;
 }
 .Search-form-reservation__input {
-    height: 40px;
     width: 180px;
     margin: 0 7px;
+    padding: 10px 0;
     padding-left: 2px;
     border: 1px solid var(--deepgold);
     background-color: transparent;
-    color: #ffffff87;
+    color: inherit;
     cursor: pointer;
+}
+.Search-form-reservation__input--special {
+    width: 220px;
+    padding: 15px 0;
+    padding-left: 5px;
+    font-size: 2rem;
 }
 .Search-form-reservation__input option {
     color: white;
@@ -24,4 +30,13 @@
 }
 .Search-form-reservation__button {
     text-align: center;
+    padding-left: 0;
+}
+
+@media (max-width: 768px) {
+    .Search-form-reservation {
+        padding: 70px 0;
+        flex-direction: column;
+        gap: 30px;
+    }
 }

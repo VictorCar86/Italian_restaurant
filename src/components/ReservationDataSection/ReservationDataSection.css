@@ -1,12 +1,3 @@
-.ReservationDataSection__info {
-    max-width: 920px;
-    padding: 25px 0;
-    margin: 60px auto 50px;
-    border: 1px solid var(--deepgold);
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: var(--deepgold);
-}
 .ReservationDataSection__grid {
     height: 355px;
     display: grid;

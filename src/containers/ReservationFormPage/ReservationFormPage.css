@@ -1,14 +1,36 @@
 .ReservationFormPage {
     padding: 0 14%;
-    overflow: hidden;
+}
+.ReservationFormPage__section__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px,400px));
+    justify-content: center;
+    column-gap: 18px;
+    row-gap: 26px;
+}
+.ReservationFormPage__section__grid input {
+    background-color: transparent;
+    border: 1px solid var(--deepgold);
+    font-size: 2rem;
+    padding: 16px 0 16px 10px;
+    color: inherit;
 }
 .ReservationFormPage__section__summary {
     color: var(--deepgold);
     font-size: 2rem;
-    margin: 30px 0;
+    margin: 40px 0 30px;
 }
 .ReservationFormPage__section__expected {
     color: white;
     font-size: 2rem;
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .ReservationFormPage__section__grid {
+        display: grid;
+        grid-template-columns: minmax(200px,300px);
+        justify-content: center;
+        row-gap: 26px;
+    }
 }

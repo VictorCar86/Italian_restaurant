@@ -6,6 +6,8 @@ import ReservationSection from '../../components/ReservationSection'
 import { AppContext } from '../../context/AppProvider'
 import GoBackSection from '../../components/GoBackSection'
 import GenericButton from '../../components/GenericButton'
+import Modal from '../../components/Modal'
+import CongratsModal from '../../components/CongratsModal'
 
 const ReservationFormPage = () => {
 
@@ -30,7 +32,7 @@ const ReservationFormPage = () => {
             <ReservationSection special="true" >
               {state.date && (
                 <section className='ReservationFormPage__section'>
-                    <h3 className='ReservationFormPage__section__info'>{state.date}-{state.hour}</h3>
+                    <h3 className='Title-reservation-pages'>Every element is required</h3>
                     <form action="#" onSubmit={event => event.preventDefault()}>
                       <div className='ReservationFormPage__section__grid'>
                         <input type="text" placeholder='name' />
@@ -47,6 +49,12 @@ const ReservationFormPage = () => {
               {!state.date && <GoBackSection />}
             </ReservationSection>
           </main>
+          <Modal>
+            <CongratsModal>
+              <p>Thank you for your visit to us!</p>
+              <p>We look forward to hearing from you!</p>
+            </CongratsModal>
+          </Modal>
       </>
     )
 }

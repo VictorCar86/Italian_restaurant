@@ -18,6 +18,9 @@ a {
     color: inherit;
     text-decoration: none;
 }
+main {
+    overflow: hidden;
+}
 :root {
     --deepgold: #b5986d;
     --deepblue: #020b1b;
@@ -89,4 +92,14 @@ a {
     height: 1px;
     margin-bottom: 2px;
     background-color: var(--deepgold);
+}
+
+.Title-reservation-pages {
+    max-width: 920px;
+    padding: 25px 0;
+    margin: 60px auto 50px;
+    border: 1px solid var(--deepgold);
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--deepgold);
 }

@@ -1,14 +1,21 @@
 import React, { useContext, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../../context/AppProvider'
+import Modal from '../Modal'
 import "./ReservationFromSearch.css"
 
-const ReservationFormSearch = () => {
+const ReservationFormSearch = ({ special = false }) => {
   const { state, setState } = useContext(AppContext)
 
   const form = useRef(null)
 
   const navigator = useNavigate()
+
+  let inputClass = "Search-form-reservation__input";
+
+  if (special){
+    inputClass += " Search-form-reservation__input--special"
+  }
 
   function updateState(){
     const formData = new FormData(form.current)
@@ -34,7 +41,7 @@ const ReservationFormSearch = () => {
   return (
     <form className='Search-form-reservation' ref={form} onSubmit={event => event.preventDefault()}>
       <select
-        className='Search-form-reservation__input'
+        className={inputClass}
         name="guests"
         id="guests"
         defaultValue="DEFAULT"
@@ -47,7 +54,7 @@ const ReservationFormSearch = () => {
           <option value="4">4</option>
       </select>
       <select
-        className='Search-form-reservation__input'
+        className={inputClass}
         name="date"
         id="date"
         defaultValue="DEFAULT"
@@ -63,7 +70,7 @@ const ReservationFormSearch = () => {
           <option value="Tuesday, May 16">Tuesday, May 15</option>
       </select>
       <select
-        className='Search-form-reservation__input'
+        className={inputClass}
         name="time"
         id="time"
         defaultValue="DEFAULT"
@@ -73,7 +80,7 @@ const ReservationFormSearch = () => {
           <option value="AM">AM</option>
           <option value="PM">PM</option>
       </select>
-      <button className='Search-form-reservation__input Search-form-reservation__button' onClick={ updateState } type="submit">search</button>
+      <button className={`${inputClass} Search-form-reservation__button`} onClick={ updateState } type="submit">search</button>
     </form>
   )
 }

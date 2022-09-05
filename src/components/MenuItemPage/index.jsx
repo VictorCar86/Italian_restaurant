@@ -37,11 +37,6 @@ const MenuItemPage = ({ plateImg, plateImgAlt, title, schedule, children, articl
         <div className='MenuItemPage-main__article-container'>
           {article}
         </div>
-
-        <ReservationSection>
-          <ReservationFormSearch />
-        </ReservationSection>
-
       </PageTemplate>
     </>
   )
