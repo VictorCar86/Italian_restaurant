@@ -9,11 +9,17 @@
     row-gap: 26px;
 }
 .ReservationFormPage__section__grid input {
-    background-color: transparent;
-    border: 1px solid var(--deepgold);
-    font-size: 2rem;
+    height: 57px;
     padding: 16px 0 16px 10px;
+    border: 1px solid var(--deepgold);
     color: inherit;
+    font-size: 2rem;
+    background-color: transparent;
+}
+::-webkit-calendar-picker-indicator {
+    border-radius: 6px;
+    margin-right: 10px;
+    background-color: #ffffff87;
 }
 .ReservationFormPage__section__summary {
     color: var(--deepgold);

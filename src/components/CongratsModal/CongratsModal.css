@@ -1,20 +1,70 @@
 .CongratsModal {
-    position: relative;
-    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #020b1b70;
+    animation: congrats-modal-ON 1s ease forwards;
 }
-.CongratsModal__info {
-    width: 92%;
-    height: 83%;
+.CongratsModal--OFF {
+    animation: congrats-modal-OFF 0.8s ease forwards;
+}
+@keyframes congrats-modal-ON {
+    from {
+        display: fixed;
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+@keyframes congrats-modal-OFF {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+        display: none;
+    }
+}
+.CongratsModal-container {
+    display: inline-block;
+    width: 550px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: congrats-container 1s ease forwards;
+}
+@keyframes congrats-container {
+    from {
+        transform: translate(-50%, -100%);
+    } to {
+        transform: translate(-50%, -50%);
+    }
+}
+.CongratsModal-container__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.CongratsModal-container__info {
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
     position: absolute;
     top: 0;
-    margin: 25px 20px;
+    margin: 25px;
     border: 2px solid var(--deepgold);
     text-align: center;
-    letter-spacing: 1px;
     line-height: 30px;
-    font-size: 2.5rem;
 }
-.CongratsModal__info__img {
-    width: 60px;
-    margin: 30px 0;
+.CongratsModal-container__info__img {
+    width: 65px;
+    margin: 40px 0 45px;
+}
+
+@media (max-width: 768px) {
+    .CongratsModal-container {
+        width: 320px;
+    }
 }
