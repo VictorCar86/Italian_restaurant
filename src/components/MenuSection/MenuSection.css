@@ -1,0 +1,23 @@
+.MenuSection {
+    margin-bottom: 200px;
+}
+.MenuSection__list-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 120px 0;
+}
+.MenuSection__list-container article:nth-child(even) {
+    border-left: 1px solid var(--deepgold);
+    padding-left: 45px;
+}
+.MenuSection__list-container article:nth-child(odd) {
+    padding-right: 45px;
+}
+.MenuSection__list-container article:nth-child(1),
+.MenuSection__list-container article:nth-child(2) {
+    padding-top: 0;
+}
+.MenuSection__list-container article:nth-child(7),
+.MenuSection__list-container article:nth-child(8) {
+    border-bottom: none;
+}

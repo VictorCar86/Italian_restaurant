@@ -3,7 +3,7 @@ import "./MainPage.css"
 import Navbar from '../../components/Navbar'
 import MainPresentation from '../../components/MainPresentation'
 import AboutUs from '../../components/AboutUs'
-import Menu from '../../components/Menu'
+import MenuSection from '../../components/MenuSection'
 import ReservationFormSearch from '../../components/ReservationFormSearch'
 import ReservationSection from '../../components/ReservationSection'
 
@@ -16,7 +16,7 @@ const MainPage = () => {
       <main className='MainPage__main-section'>
         <MainPresentation />
         <AboutUs />
-        <Menu />
+        <MenuSection />
         <ReservationSection>
           <ReservationFormSearch />
         </ReservationSection>

@@ -6,7 +6,7 @@ import ReservationSection from '../../components/ReservationSection'
 import { AppContext } from '../../context/AppProvider'
 import GoBackSection from '../../components/GoBackSection'
 import GenericButton from '../../components/GenericButton'
-import Modal from '../../components/Modal'
+import Modal from '../../utils/Modal'
 import CongratsModal from '../../components/CongratsModal'
 
 const ReservationFormPage = () => {

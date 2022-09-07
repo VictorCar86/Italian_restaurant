@@ -1,7 +1,6 @@
 import React, { useContext, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../../context/AppProvider'
-import Modal from '../Modal'
 import "./ReservationFromSearch.css"
 
 const ReservationFormSearch = ({ special = false }) => {
@@ -11,10 +10,10 @@ const ReservationFormSearch = ({ special = false }) => {
 
   const navigator = useNavigate()
 
-  let inputClass = "Search-form-reservation__input";
+  let inputClass = "ReservationFormSearch__input";
 
   if (special){
-    inputClass += " Search-form-reservation__input--special"
+    inputClass += " ReservationFormSearch__input--special"
   }
 
   function updateState(){
@@ -39,7 +38,7 @@ const ReservationFormSearch = ({ special = false }) => {
   }
 
   return (
-    <form className='Search-form-reservation' ref={form} onSubmit={event => event.preventDefault()}>
+    <form className='ReservationFormSearch' ref={form} onSubmit={event => event.preventDefault()}>
       <select
         className={inputClass}
         name="guests"
@@ -80,7 +79,7 @@ const ReservationFormSearch = ({ special = false }) => {
           <option value="AM">AM</option>
           <option value="PM">PM</option>
       </select>
-      <button className={`${inputClass} Search-form-reservation__button`} onClick={ updateState } type="submit">search</button>
+      <button className={`${inputClass} ReservationFormSearch__button`} onClick={ updateState } type="submit">search</button>
     </form>
   )
 }

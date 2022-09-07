@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Menu.css"
+import "./MenuSection.css"
 import PlatesMenu from '../PlatesMenu'
 import ArticleInfo from '../ArticleInfo'
 import Title from '../Title'
@@ -13,12 +13,12 @@ import dessertsImg from '@food/desserts.jpg'
 import freshBreadImg from '@food/fresh_breads.jpg'
 import restaurantImg from '@addons/fallon-travels.jpg'
 
-const Menu = () => {
+const MenuSection = () => {
   return (
-    <section id='menu' className='Menu-section'>
+    <section id='menu' className='MenuSection'>
         <Title title={"Menu"} />
         <p className='description'>Discover the taste</p>
-        <div className='Menu-section__list-container'>
+        <div className='MenuSection__list-container'>
             <PlatesMenu
                 imgSrc={entreesImg}
                 alt={"Table with jam, cheese, strawberries and grapes"}
@@ -83,4 +83,4 @@ const Menu = () => {
   )
 }
 
-export default Menu
+export default MenuSection

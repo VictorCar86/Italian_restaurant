@@ -24,19 +24,18 @@
 
 .MainPresentation__contact-info-container {
     height: 50px;
-}
-.MainPresentation__contact-info-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 25%;
+    column-gap: 7%;
     padding: 0 10px;
 }
 .MainPresentation__social-media-container {
+    width: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 150px;
+    column-gap: 10px;
 }
 .MainPresentation__main-description {
     position: absolute;
@@ -60,4 +59,10 @@
     font-family: "The Seasons", sans-serif;
     font-weight: 100;
     color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .MainPresentation__contact-info-container {
+        padding: 0;
+    }
 }

@@ -4,6 +4,13 @@
     align-items: center;
     height: 100px;
 }
+.navbar__aligner {
+    display: none;
+    background: none;
+    border: none;
+    width: 30px;
+    cursor: pointer;
+}
 .navbar__regina-logo {
     width: 75px;
     cursor: pointer;
@@ -32,4 +39,23 @@
 .navbar__list-item .navbar__list-item--special:hover {
     color: var(--deepblue);
     transition: color 0.5s;
+}
+.navbar__reserv-button {
+    display: none;
+    width: 36px;
+    padding: 4px 4px 0;
+    background: none;
+    border: 2px solid var(--deepgold);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar__aligner,
+    .navbar__reserv-button {
+        display: block;
+    }
+    .navbar__list-item {
+        display: none;
+    }
 }
