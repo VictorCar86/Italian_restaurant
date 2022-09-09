@@ -19,6 +19,10 @@ const MainPresentation = () => {
               alt="Restaurant decoration from Italy"
             />
         </div>
+        <div className='MainPresentation__main-description'>
+          <h1 className='MainPresentation__main-description__title'>La Regina</h1>
+          <p className='MainPresentation__main-description__subtitle'>A taste of Italy on your table <br /> every day</p>
+        </div>
         <article className='MainPresentation__contact-info-container'>
           <section className='MainPresentation__social-media-container'>
             <FacebookIcon />
@@ -29,10 +33,6 @@ const MainPresentation = () => {
             <PseudoButton text={"contacts"} linkTo="#" />
           </section>
         </article>
-        <div className='MainPresentation__main-description'>
-          <h1 className='MainPresentation__main-description__title'>La Regina</h1>
-          <p className='MainPresentation__main-description__subtitle'>A taste of Italy on your table <br /> every day</p>
-        </div>
     </section>
   )
 }

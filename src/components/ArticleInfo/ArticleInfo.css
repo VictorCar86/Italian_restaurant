@@ -24,7 +24,7 @@
     background-color: #80694e;
 }
 .ArticleInfo__text-container__text {
-    width: 235px;
+    max-width: 235px;
     line-height: 25px;
     letter-spacing: 1px;
 }
@@ -33,4 +33,17 @@
     height: 1px;
     background-color: var(--deepgold);
     margin: 40px 0 0 auto;
+}
+
+@media (max-width: 425px) {
+    .ArticleInfo {
+        position: inherit;
+        height: auto;
+        width: 100%;
+    }
+    .ArticleInfo__text-container {
+        position: inherit;
+        transform: translateY(-3px);
+        width: 100%;
+    }
 }

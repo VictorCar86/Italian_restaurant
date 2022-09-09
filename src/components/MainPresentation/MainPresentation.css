@@ -4,22 +4,23 @@
 .MainPresentation__gallery {
     display: flex;
     justify-content: space-between;
-    height: 633px;
+    height: 70vh;
     margin: 60px 0 25px;
     padding: 0 20px;
+    overflow: hidden;
 }
 .MainPresentation__gallery__aside {
     position: relative;
     align-self: flex-end;
-    padding-bottom: 80px;
-    margin-right: 50px;
+    padding-bottom: 8%;
+    margin-right: 90px;
 }
 .MainPresentation__gallery__image {
-    width: 950px;
-    min-width: 550px;
+    width: 100%;
+    max-width: 730px;
     opacity: 0.7;
     object-fit: cover;
-    object-position: 175px;
+    object-position: right;
 }
 
 .MainPresentation__contact-info-container {
@@ -50,7 +51,7 @@
    -ms-user-select: none; /* Internet Explorer/Edge */
 }
 .MainPresentation__main-description__title {
-    width: 650px;
+    width: max-content;
     font-size: 14rem;
     font-family: "The Seasons", sans-serif;
     color: #ffffff;
@@ -61,8 +62,41 @@
     color: #ffffff;
 }
 
+@media (max-width: 1080px) {
+    .MainPresentation__gallery__aside {
+        margin-right: 30px;
+    }
+}
 @media (max-width: 768px) {
+    .MainPresentation__gallery {
+        flex-direction: column-reverse;
+        height: 70vh;
+        padding: 0px;
+        margin: 10px 0 35px;
+        gap: 20px;
+        overflow: hidden;
+    }
+    .MainPresentation__gallery__image {
+        height: 100%;
+        width: 100%;
+        min-width: 0px;
+        object-position: center;
+    }
+    .MainPresentation__gallery__aside {
+        align-self: center;
+        padding-bottom: 0px;
+        margin-right: 0px;
+    }
+    .MainPresentation__main-description__title {
+        font-size: 8.5rem;
+    }
     .MainPresentation__contact-info-container {
         padding: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .MainPresentation__main-description__title {
+        font-size: 6rem;
     }
 }
