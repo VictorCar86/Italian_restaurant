@@ -21,11 +21,14 @@
 .AboutUs-container__hero {
     position: relative;
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 .AboutUs-container__hero__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: left;
 }
 .AboutUs-container__hero__info {
     display: flex;
@@ -36,13 +39,15 @@
     top: 0;
     left: 50%;
     height: 107%;
-    width: 360px;
+    width: 45%;
+    max-width: 360px;
+    padding: 0 15px;
     transform: translate(-50%, 0);
     background-color: #80694e;
 }
 .AboutUs-container__hero__info__description {
     text-align: center;
-    width: 255px;
+    max-width: 255px;
     line-height: 26px;
     letter-spacing: 1px;
 }
@@ -79,7 +84,7 @@
     opacity: 0.7;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
     .AboutUs-container {
         align-items: flex-start;
         height: auto;
@@ -87,16 +92,58 @@
         gap: 50px;
         padding-bottom: 150px;
     }
+}
+
+@media (max-width: 1024px) {
     .AboutUs-container__hero {
         height: 390px;
     }
     .AboutUs-container__hero__info {
         left: 60%;
-        width: 300px;
+        width: 270px;
+    }
+    .AboutUs-container__hero__info__description {
+        width: 210px;
     }
     .AboutUs-section__extra-info {
         flex-direction: column;
         margin: 0 0 150px;
         gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .AboutUs-container__hero__info {
+        width: 205px;
+        left: inherit;
+        right: 0;
+        transform: inherit;
+    }
+    .AboutUs-container__hero__info__description {
+        width: 190px;
+    }
+}
+
+@media (max-width: 425px) {
+    .AboutUs-container {
+        padding-bottom: 100px;
+    }
+    .AboutUs-container__hero {
+        position: inherit;
+        width: 100%;
+        height: auto;
+    }
+    .AboutUs-container__hero__img {
+        height: auto;
+    }
+    .AboutUs-container__hero__info {
+        width: 100%;
+        position: inherit;
+        height: min-content;
+        transform: translateY(-4px);
+    }
+    .AboutUs-container__hero__info__description {
+        width: auto;
+        max-width: 255px;
     }
 }
