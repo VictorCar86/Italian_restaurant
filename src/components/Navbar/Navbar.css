@@ -3,6 +3,7 @@
     justify-content: space-around;
     align-items: center;
     height: 100px;
+    position: relative;
 }
 .navbar__aligner {
     display: none;
@@ -10,8 +11,12 @@
     border: none;
     width: 30px;
     cursor: pointer;
+    z-index: 4;
 }
-.navbar__regina-logo {
+.navbar__regina-link {
+    z-index: 4;
+}
+.navbar__regina-link__logo {
     width: 75px;
     cursor: pointer;
 }
@@ -48,6 +53,54 @@
     border: 2px solid var(--deepgold);
     border-radius: 6px;
     cursor: pointer;
+    z-index: 4;
+}
+
+.modalNavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    background-color: #020b1bdb;
+
+    animation: modalMenu-ON 0.5s cubic-bezier(0,1.01,1,1) forwards;
+}
+
+.modalNavbar--modalMenuOFF {
+    animation-name: modalMenu-OFF;
+}
+
+@keyframes modalMenu-ON {
+    from {
+        transform: translateX(-100%);
+    } to {
+        transform: translateX(0%);
+    }
+}
+@keyframes modalMenu-OFF {
+    from {
+        transform: translateX(0%);
+    } to {
+        transform: translateX(-100%);
+    }
+}
+
+.modalNavbar__ul {
+    height: calc(100% - 200px);
+    margin: 100px 0;
+    padding: 30px 50px 0;
+    border-top: 1px solid var(--deepgold);
+    border-bottom: 1px solid var(--deepgold);
+    line-height: 40px;
+    list-style: none;
+}
+.modalNavbar__ul li {
+    font-size: 1.8rem;
+}
+.modalNavbar__ul li a {
+    font-size: inherit;
 }
 
 @media (max-width: 768px) {

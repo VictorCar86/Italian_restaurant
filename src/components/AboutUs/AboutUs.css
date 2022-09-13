@@ -114,7 +114,8 @@
 
 @media (max-width: 768px) {
     .AboutUs-container__hero__info {
-        width: 205px;
+        width: 45%;
+        min-width: 210px;
         left: inherit;
         right: 0;
         transform: inherit;

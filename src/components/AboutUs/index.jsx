@@ -6,7 +6,7 @@ import musicalImg from '@addons/musical.png'
 
 const AboutUs = () => {
   return (
-    <section className='AboutUs-section'>
+    <section id='about' className='AboutUs-section'>
         <div className='AboutUs-container'>
             <aside className='AboutUs-container__main-description'>
                 <Title title={"About Us"} />
