@@ -6,19 +6,47 @@ import reginaLogoImg from '@addons/la-regina-logo.png'
 import AlignerIcon from '../Icons/AlignerIcon'
 import ReservationIcon from '../Icons/ReservationIcon'
 import RightArrowsIcon from '../Icons/RightArrowsIcon'
+import CrossIcon from '../Icons/CrossIcon'
 
 const Navbar = ({special = false}) => {
 
   const [modalMenu, setModalMenu] = useState(false)
-  const [modalClass, setModaClass] = useState("")
+  const [modalClass, setModalClass] = useState("")
+  const [buttonClass, setButtonClass] = useState("")
+
+  const scrollToCloserHorizontalBorder = () => {
+    const {scrollTop, scrollHeight} = document.documentElement;
+
+    if (scrollTop < scrollHeight / 2){
+      window.scrollTo({top: 0, behavior: "smooth"})
+    } else {
+      window.scrollTo({top: scrollHeight, behavior: "smooth"})
+    }
+  }
+
+  const body = document.getElementsByTagName("body");
 
   const toggleModal = () => {
-    setModaClass("")
+    setModalClass("")
+
     if (!modalMenu){
+      body[0].style.overflowY = "hidden"
+      scrollToCloserHorizontalBorder()
       setModalMenu(prev => !prev)
+      setButtonClass("navbar__aligner--buttonModalON")
+      setTimeout(
+        () => setButtonClass("navbar__aligner--buttonModalOFF"),
+        250
+      )
     }
     else {
-      setModaClass("modalNavbar--modalMenuOFF")
+      body[0].style.overflowY = "auto"
+      setModalClass("modalNavbar--modalMenuOFF")
+      setButtonClass("navbar__aligner--buttonModalON")
+      setTimeout(
+        () => setButtonClass("navbar__aligner--buttonModalOFF"),
+        250
+      )
       setTimeout(
         () => setModalMenu(prev => !prev),
         500
@@ -28,12 +56,14 @@ const Navbar = ({special = false}) => {
 
   const closeModalAuto = () => {
     setModalMenu(false)
+    body[0].style.overflowY = "auto"
   }
 
   return (
     <nav className='navbar'>
-        <button className='navbar__aligner' onClick={toggleModal} type='button'>
-          <AlignerIcon />
+        <button className={`navbar__aligner ${buttonClass}`} onClick={toggleModal} type='button'>
+          {!modalMenu && <AlignerIcon />}
+          {modalMenu && <CrossIcon />}
         </button>
         {modalMenu && (
           <nav className={`modalNavbar ${modalClass}`}>

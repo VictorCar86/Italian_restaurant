@@ -11,3 +11,10 @@
 .SecondaryNav__ul__li--actual {
     color: var(--deepgold);
 }
+
+@media (max-width: 768px) {
+    .SecondaryNav__ul {
+        height: 130px;
+        padding-bottom: 50px;
+    }
+}
