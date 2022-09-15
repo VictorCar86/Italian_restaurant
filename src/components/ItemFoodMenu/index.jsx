@@ -4,10 +4,12 @@ import "./ItemFoodMenu.css"
 const ItemFoodMenu = ({ title, price, description }) => {
   return (
     <article className='ItemFoodMenu'>
-        <h3 className='ItemFoodMenu__title'>{title}</h3>
-        <span className='ItemFoodMenu__price'>{price}</span>
-        <div className='huge-divisor-addon'></div>
-        <p className='ItemFoodMenu__description'>{description}</p>
+      <div className='ItemFoodMenu__mainInfo'>
+        <h3 className='ItemFoodMenu__mainInfo__title'>{title}</h3>
+        <span className='ItemFoodMenu__mainInfo__price'>{price}</span>
+      </div>
+      <div className='huge-divisor-addon'></div>
+      <p className='ItemFoodMenu__description'>{description}</p>
     </article>
   )
 }

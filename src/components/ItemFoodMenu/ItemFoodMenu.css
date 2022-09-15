@@ -1,13 +1,19 @@
 .ItemFoodMenu {
     margin-top: 80px;
 }
-.ItemFoodMenu__title {
+.ItemFoodMenu__mainInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.ItemFoodMenu__mainInfo__title {
     display: inline-block;
     font-size: 3rem;
     color: white;
     font-weight: 500;
 }
-.ItemFoodMenu__price {
+.ItemFoodMenu__mainInfo__price {
     color: var(--deepgold);
     font-size: 3rem;
     float: right;
@@ -15,4 +21,16 @@
 .ItemFoodMenu__description {
     font-size: 2rem;
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .ItemFoodMenu__mainInfo__title {
+        font-size: 2.3rem;
+    }
+    .ItemFoodMenu__mainInfo__price {
+        font-size: 2.3rem;
+    }
+    .ItemFoodMenu__description {
+        font-size: 1.8rem;
+    }
 }
