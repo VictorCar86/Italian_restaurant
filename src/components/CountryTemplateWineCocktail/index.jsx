@@ -45,6 +45,14 @@ const ItalyWineCocktail = ({ title = "undefined", imgSrc, imgAlt, products }) =>
 
     const selectRef = useRef(null)
 
+    const staticTitle = (<>
+        <>{title} </>
+        <span style={{"marginRight": "-6px", "fontSize": "inherit"}}>
+          wine&
+        </span>
+        <> cocktail bar</>
+      </>);
+
     return (
         <PageTemplate
             imgSrc={imgSrc}
@@ -54,7 +62,7 @@ const ItalyWineCocktail = ({ title = "undefined", imgSrc, imgAlt, products }) =>
                 pages={pages}
                 titlePage={title}
             />
-            <Title title={`${title} wine&cocktail bar`} />
+            <Title title={staticTitle} />
             <p className='description'>Select the desired type of drink for your convenience</p>
             <select
                 className='CountryTemplateWineCocktail__accordion'

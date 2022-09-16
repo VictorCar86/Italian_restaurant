@@ -1,21 +1,30 @@
 .WineCocktailPage__description {
-    display: flex;
+    max-width: 460px;
+}
+.WineCocktailPage__article {
+    display: grid;
     justify-content: center;
     align-items: center;
+    grid-template-columns: repeat(2, minmax(200px, 550px));
+    grid-template-rows: 500px;
     gap: 5%;
-    margin: 150px 0;
+    grid-auto-flow: column;
+    margin: 110px 0 130px;
 }
-.WineCocktailPage__description__img {
-    height: 500px;
-    width: 520px;
+.WineCocktailPage__article__img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
 }
-.WineCocktailPage__description__info {
-    width: 380px;
+.WineCocktailPage__article__info {
+    max-width: 380px;
+}
+.WineCocktailPage__specialDescription {
+    margin-bottom: 120px;
 }
 .WineCocktailPage__slider-wines {
-    margin: 150px 0;
+    margin: 130px 0;
 }
 .WineCocktailPage__slider-wines__ul {
     display: flex;
@@ -24,6 +33,8 @@
     padding-bottom: 30px;
     scrollbar-width: auto;
     scrollbar-color: #b5986d #ffffff;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
 }
 .WineCocktailPage__slider-wines__ul::-webkit-scrollbar {
     height: 8px;
@@ -42,6 +53,7 @@
 .WineCocktailPage__slider-wines__ul__li {
     margin: 0 30px;
     list-style: none;
+    scroll-snap-align: center;
 }
 .WineCocktailPage__slider-wines__ul__li__article {
     text-align: center;
@@ -53,4 +65,19 @@
     border: 1px solid var(--deepgold);
     object-fit: cover;
     object-position: center;
+}
+
+@media (max-width: 768px) {
+    .WineCocktailPage__article {
+        grid-template-columns: auto;
+        grid-template-rows: 40vh auto;
+        grid-auto-flow: row;
+        margin: 70px 0 110px;
+    }
+    .WineCocktailPage__slider-wines {
+        margin: 90px 0;
+    }
+    .WineCocktailPage__specialDescription {
+        margin-bottom: 80px;
+    }
 }

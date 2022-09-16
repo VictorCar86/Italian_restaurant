@@ -17,7 +17,12 @@ import wineCocktailArtBigImg from '@articles/article-wine&cocktail-big.jpg'
 
 const WineCocktailPage = () => {
 
-  const title = "Wine&cocktail bar";
+  const staticTitle = (<>
+                  <span style={{"marginRight": "-6px", "fontSize": "inherit"}}>
+                    Wine&
+                  </span>
+                  <> cocktail bar</>
+                </>);
 
   const winesInfo = [
     {
@@ -57,7 +62,11 @@ const WineCocktailPage = () => {
       return (
         <li className='WineCocktailPage__slider-wines__ul__li' key={index}>
           <article className='WineCocktailPage__slider-wines__ul__li__article'>
-            <img className='WineCocktailPage__slider-wines__ul__li__article__img' src={wine.imgSrc} alt={wine.imgAlt} />
+            <img
+              className='WineCocktailPage__slider-wines__ul__li__article__img'
+              src={wine.imgSrc}
+              alt={wine.imgAlt}
+            />
             <h5 className='Item-title'>{wine.title}</h5>
             <p className='Item-link'>
               <Link to={wine.linkTo}>
@@ -76,15 +85,19 @@ const WineCocktailPage = () => {
       imgSrc={wineCocktailBigImg}
       imgAlt={"cocktail with ice"}
     >
-      <SecondaryNav titlePage={title} />
-      <Title title={title} />
-      <p className='description'>
-        Our wine list is the result of a fine selection made <br />
+      <SecondaryNav titlePage={staticTitle} />
+      <Title title={staticTitle} />
+      <p className='WineCocktailPage__description description'>
+        Our wine list is the result of a fine selection made
         with our head sommelier Ricardo Tolly
       </p>
-      <article className='WineCocktailPage__description'>
-        <img className='WineCocktailPage__description__img' src={wineCocktailDescImg} alt="Wine collection in front a wall" />
-        <span className='WineCocktailPage__description__info description'>
+      <article className='WineCocktailPage__article'>
+        <img
+          className='WineCocktailPage__article__img'
+          src={wineCocktailDescImg}
+          alt="Wine collection in front a wall"
+        />
+        <span className='WineCocktailPage__article__info description'>
           Our wines, have a strong personality and
           character related to a specific territory,
           as well as wines that can be drunk
@@ -100,7 +113,11 @@ const WineCocktailPage = () => {
           {!!winesInfo && createWines(winesInfo)}
         </ul>
       </section>
-      <DescriptionInfo description={"For any dietary requirements please ask your waiter or waitress"} />
+      <div className="WineCocktailPage__specialDescription">
+        <DescriptionInfo
+          description={"For any dietary requirements please ask your waiter or waitress"}
+        />
+      </div>
       <ArticleInfo
         imgSrc={wineCocktailArtBigImg}
         description={"The best wine is the wine that the person who drinks it likes best"}
