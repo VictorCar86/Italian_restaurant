@@ -16,6 +16,7 @@
     margin-right: 90px;
 }
 .MainPresentation__gallery__image {
+    height: 100%;
     width: 100%;
     max-width: 730px;
     opacity: 0.7;

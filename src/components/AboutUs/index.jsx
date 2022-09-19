@@ -1,7 +1,8 @@
 import React from 'react'
 import "./AboutUs.css"
 import Title from '../Title'
-import chefImg from '@addons/chef-cutting.jpg'
+import chefTinyImg from '@addons/chef-cutting.jpg'
+import chefBigImg from '@addons/chef-cutting-big.jpg'
 import musicalImg from '@addons/musical.png'
 
 const AboutUs = () => {
@@ -18,7 +19,10 @@ const AboutUs = () => {
                 </p>
             </aside>
             <div className='AboutUs-container__hero'>
-                <img className='AboutUs-container__hero__img' src={chefImg} alt="A chef cutting vegetables" />
+                <picture>
+                    <source srcSet={chefTinyImg} media="(max-width: 768px)" />
+                    <img className='AboutUs-container__hero__img' src={chefBigImg} alt="A chef cutting vegetables" />
+                </picture>
                 <div className='AboutUs-container__hero__info'>
                     <span className='line-addon'></span>
                     <p className='AboutUs-container__hero__info__description'>

@@ -4,12 +4,19 @@ import Navbar from '../Navbar'
 import ReservationSection from '../ReservationSection'
 import ReservationFormSearch from '../ReservationFormSearch'
 
-const PageTemplate = ({ specialNav, imgSrc, imgAlt, children }) => {
+const PageTemplate = ({ specialNav, imgTinySrc, imgBigSrc, imgAlt, children }) => {
   return (
     <>
       <header className='PageTemplate-header'>
         <Navbar special={specialNav}/>
-        <img className='PageTemplate-header__img' src={imgSrc} alt={imgAlt} />
+        <picture>
+          <source srcSet={imgTinySrc} media="(max-width: 768px)" />
+          <img
+            className='PageTemplate-header__img'
+            src={imgBigSrc}
+            alt={imgAlt}
+          />
+        </picture>
       </header>
       <main className='PageTemplate-main'>
         { children }

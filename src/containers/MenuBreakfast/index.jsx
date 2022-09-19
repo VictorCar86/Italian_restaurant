@@ -2,19 +2,23 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
+import breakfastTinyImg from '@food/breakfast.jpg'
 import breakfastBigImg from '@food/breakfast-big.jpg'
+import frenchToastArtTinyImg from '@articles/article-french-toast.jpg'
 import frenchToastArtBigImg from '@articles/article-french-toast-big.jpg'
 
 const MenuBreakfast = () => {
   return (
     <MenuItemPage
-        plateImg={breakfastBigImg}
-        plateImgAlt={"Cooked eggs with avocado and bread"}
+        imgTinySrc={breakfastTinyImg}
+        imgBigSrc={breakfastBigImg}
+        imgAlt={"Cooked eggs with avocado and bread"}
         title={"Breakfast"}
         schedule={"10:00 am - 12:00 pm 7 days"}
         article={
-        <ArticleInfo
-            imgSrc={frenchToastArtBigImg}
+          <ArticleInfo
+            imgTinySrc={frenchToastArtTinyImg}
+            imgBigSrc={frenchToastArtBigImg}
             imgAlt={"Toasted bread with grapes and butter"}
             description={<>
                 Breakfast is everything.

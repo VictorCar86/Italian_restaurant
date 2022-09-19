@@ -2,28 +2,32 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
+import launchSetMenuTinyImg from '@food/lunch_set_menu.jpg'
 import launchSetMenuBigImg from '@food/lunch_set_menu-big.jpg'
+import launchSetMenuArtTinyImg from '@articles/article-lunch-set-menu.jpg'
 import launchSetMenuArtBigImg from '@articles/article-lunch-set-menu-big.jpg'
 
 const MenuLaunch = () => {
   return (
     <MenuItemPage
-        plateImg={launchSetMenuBigImg}
-        plateImgAlt={"Plate with mushrooms, lettuce and bread"}
-        title={"Launch Set Menu"}
-        schedule={"10:00 am - 23:00 pm 7 days"}
-        article={
+      imgTinySrc={launchSetMenuTinyImg}
+      imgBigSrc={launchSetMenuBigImg}
+      imgAlt={"Plate with mushrooms, lettuce and bread"}
+      title={"Launch Set Menu"}
+      schedule={"10:00 am - 23:00 pm 7 days"}
+      article={
         <ArticleInfo
-            imgSrc={launchSetMenuArtBigImg}
-            imgAlt={"Toasted bread with grapes and butter"}
-            description={<>
-                From easy Italian soup recipes to swift yet
-                filling meals. These Italian lunch recipes are
-                quick to make for you and pretty delicious to eat.
-              </>
-            }
-          />
-        }
+          imgTinySrc={launchSetMenuArtTinyImg}
+          imgBigSrc={launchSetMenuArtBigImg}
+          imgAlt={"Toasted bread with grapes and butter"}
+          description={<>
+              From easy Italian soup recipes to swift yet
+              filling meals. These Italian lunch recipes are
+              quick to make for you and pretty delicious to eat.
+            </>
+          }
+        />
+      }
     >
       {/* Scalable menu with a call from APIs */}
         <ItemFoodMenu

@@ -2,27 +2,31 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
+import mainCoursesTinyImg from '@food/main_courses.jpg'
 import mainCoursesBigImg from '@food/main_courses-big.jpg'
+import mainCoursesArtTinyImg from '@articles/article-main_courses.jpg'
 import mainCoursesArtBigImg from '@articles/article-main_courses-big.jpg'
 
 const MenuMainCourses = () => {
   return (
     <MenuItemPage
-        plateImg={mainCoursesBigImg}
-        plateImgAlt={"Roasted meat with zucchini, tomato and fine herbs"}
-        title={"Main Courses"}
-        schedule={"12:00 am - 23:00 pm 7 days"}
-        article={
+      imgTinySrc={mainCoursesTinyImg}
+      imgBigSrc={mainCoursesBigImg}
+      imgAlt={"Roasted meat with zucchini, tomato and fine herbs"}
+      title={"Main Courses"}
+      schedule={"12:00 am - 23:00 pm 7 days"}
+      article={
         <ArticleInfo
-            imgSrc={mainCoursesArtBigImg}
-            imgAlt={"Toasted bread with grapes and butter"}
-            description={<>
-                Dishes enjoyed for generations in villages throughout Italy inspire our
-                menu, giving La Regina its authentic Italian fare.
-              </>
-            }
-          />
-        }
+          imgTinySrc={mainCoursesArtTinyImg}
+          imgBigSrc={mainCoursesArtBigImg}
+          imgAlt={"Toasted bread with grapes and butter"}
+          description={<>
+              Dishes enjoyed for generations in villages throughout Italy inspire our
+              menu, giving La Regina its authentic Italian fare.
+            </>
+          }
+        />
+      }
     >
       {/* Scalable menu with a call from APIs */}
         <ItemFoodMenu

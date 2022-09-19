@@ -1,14 +1,16 @@
 import React from 'react'
 import "./ItalyWineCocktailPage.css"
 import CountryTemplateWineCocktail from "../../components/CountryTemplateWineCocktail"
-import italyImg from '@drinks/italy-wc-big.jpg'
+import italyTinyImg from '@drinks/italy-wc.jpg'
+import italyBigImg from '@drinks/italy-wc-big.jpg'
 import italianProducts from '../../utils/italianProducts'
 
 const ItalyWineCocktailPage = () => {
   return (
     <CountryTemplateWineCocktail
         title="Italy"
-        imgSrc={italyImg}
+        imgTinySrc={italyTinyImg}
+        imgBigSrc={italyBigImg}
         imgAlt={"Two cups of red wine close to a bottle"}
         products={italianProducts}
     />

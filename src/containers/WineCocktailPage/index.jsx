@@ -11,8 +11,10 @@ import wineSpainImg from '@drinks/wines-spain.jpg'
 import wineFranceImg from '@drinks/wines-france.jpg'
 import winePortugalImg from '@drinks/wines-portugal.jpg'
 import wineChileImg from '@drinks/wines-chile.jpg'
+import wineCocktailTinyImg from '@drinks/wine&cocktail.jpg'
 import wineCocktailBigImg from '@drinks/wine&cocktail-big.jpg'
 import wineCocktailDescImg from '@drinks/desc-wine&cocktail.jpg'
+import wineCocktailArtTinyImg from '@articles/article-wine&cocktail.jpg'
 import wineCocktailArtBigImg from '@articles/article-wine&cocktail-big.jpg'
 
 const WineCocktailPage = () => {
@@ -82,7 +84,8 @@ const WineCocktailPage = () => {
 
   return (
     <PageTemplate
-      imgSrc={wineCocktailBigImg}
+      imgTinySrc={wineCocktailTinyImg}
+      imgBigSrc={wineCocktailBigImg}
       imgAlt={"cocktail with ice"}
     >
       <SecondaryNav titlePage={staticTitle} />
@@ -119,7 +122,9 @@ const WineCocktailPage = () => {
         />
       </div>
       <ArticleInfo
-        imgSrc={wineCocktailArtBigImg}
+        imgTinySrc={wineCocktailArtTinyImg}
+        imgBigSrc={wineCocktailArtBigImg}
+        imgAlt={"Four glasses of wine served on a barrel"}
         description={"The best wine is the wine that the person who drinks it likes best"}
       />
     </PageTemplate>

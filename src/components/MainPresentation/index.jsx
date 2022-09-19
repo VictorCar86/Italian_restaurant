@@ -1,6 +1,7 @@
 import React from 'react'
 import "./MainPresentation.css"
-import restaurantImg from '@addons/fallon-travels.jpg'
+import restaurantTinyImg from '@addons/fallon-travels.jpg'
+import restaurantBigImg from '@addons/fallon-travels-big.jpg'
 import FacebookIcon from '../Icons/FacebookIcon'
 import InstagramIcon from '../Icons/InstagramIcon'
 import EmailIcon from '../Icons/EmailIcon'
@@ -13,11 +14,14 @@ const MainPresentation = () => {
             <aside className='MainPresentation__gallery__aside'>
                 <PseudoButton text={"taste gallery"} linkTo="/taste-gallery" />
             </aside>
-            <img
-              className='MainPresentation__gallery__image'
-              src={restaurantImg}
-              alt="Restaurant decoration from Italy"
-            />
+            <picture>
+              <source srcSet={restaurantTinyImg} media="(max-width: 768px)" />
+              <img
+                className='MainPresentation__gallery__image'
+                src={restaurantBigImg}
+                alt="Restaurant decoration from Italy"
+              />
+            </picture>
         </div>
         <div className='MainPresentation__main-description'>
           <h1 className='MainPresentation__main-description__title'>La Regina</h1>

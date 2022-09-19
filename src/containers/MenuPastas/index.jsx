@@ -2,19 +2,23 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
+import specialtyPastaTinyImg from '@food/specialty-pastas.jpg'
 import specialtyPastaBigImg from '@food/specialty-pastas-big.jpg'
+import specialtyPastaArtTinyImg from '@articles/article-specialty-pastas.jpg'
 import specialtyPastaArtBigImg from '@articles/article-specialty-pastas-big.jpg'
 
 const MenuPastas = () => {
   return (
     <MenuItemPage
-        plateImg={specialtyPastaBigImg}
-        plateImgAlt={"Fettuccine with meat and cheese"}
+        imgTinySrc={specialtyPastaTinyImg}
+        imgBigSrc={specialtyPastaBigImg}
+        imgAlt={"Fettuccine with meat and cheese"}
         title={"Specialty Pastas"}
         schedule={"14:00 am - 20:00 pm 7 days"}
         article={
-        <ArticleInfo
-            imgSrc={specialtyPastaArtBigImg}
+          <ArticleInfo
+            imgTinySrc={specialtyPastaArtTinyImg}
+            imgBigSrc={specialtyPastaArtBigImg}
             imgAlt={"Toasted bread with grapes and butter"}
             description={<>
                 Pasta satisfies our every craving, whether that be for classic or innovative flavors;

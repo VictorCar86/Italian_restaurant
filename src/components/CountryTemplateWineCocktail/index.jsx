@@ -5,10 +5,8 @@ import SecondaryNav from '../SecondaryNav'
 import Title from '../Title'
 import PseudoButton from "../PseudoButton"
 import ItemWineCocktailMenu from '../ItemWineCocktailMenu'
-import ReservationSection from '../ReservationSection'
-import ReservationFormSearch from '../ReservationFormSearch'
 
-const ItalyWineCocktail = ({ title = "undefined", imgSrc, imgAlt, products }) => {
+const ItalyWineCocktail = ({ title = "undefined", imgTinySrc , imgBigSrc, imgAlt, products }) => {
 
     function showMenu(items) {
         return items.map((item, index) => {
@@ -55,7 +53,8 @@ const ItalyWineCocktail = ({ title = "undefined", imgSrc, imgAlt, products }) =>
 
     return (
         <PageTemplate
-            imgSrc={imgSrc}
+            imgTinySrc={imgTinySrc}
+            imgBigSrc={imgBigSrc}
             imgAlt={imgAlt}
         >
             <SecondaryNav

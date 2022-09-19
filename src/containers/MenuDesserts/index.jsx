@@ -2,28 +2,32 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
+import dessertsTinyImg from '@food/desserts.jpg'
 import dessertsBigImg from '@food/desserts-big.jpg'
+import dessertsArtTinyImg from '@articles/article-desserts.jpg'
 import dessertsArtBigImg from '@articles/article-desserts-big.jpg'
 
 const MenuDesserts = () => {
   return (
     <MenuItemPage
-        plateImg={dessertsBigImg}
-        plateImgAlt={"Caramelized slice of bread with blueberries and slices of banana"}
-        title={"Desserts"}
-        schedule={"10:00 am - 23:00 pm 7 days"}
-        article={
+      imgTinySrc={dessertsTinyImg}
+      imgBigSrc={dessertsBigImg}
+      imgAlt={"Caramelized slice of bread with blueberries and slices of banana"}
+      title={"Desserts"}
+      schedule={"10:00 am - 23:00 pm 7 days"}
+      article={
         <ArticleInfo
-            imgSrc={dessertsArtBigImg}
-            imgAlt={"Toasted bread with grapes and butter"}
-            description={<>
-                There's nothing like the joy that comes from baked goods.
-                It can make any occasion feel extra special, from birthdays to anniversaries
-                to potlucks and everyday dinners.
-              </>
-            }
-          />
-        }
+          imgTinySrc={dessertsArtTinyImg}
+          imgBigSrc={dessertsArtBigImg}
+          imgAlt={"Toasted bread with grapes and butter"}
+          description={<>
+              There's nothing like the joy that comes from baked goods.
+              It can make any occasion feel extra special, from birthdays to anniversaries
+              to potlucks and everyday dinners.
+            </>
+          }
+        />
+      }
     >
       {/* Scalable menu with a call from APIs */}
         <ItemFoodMenu

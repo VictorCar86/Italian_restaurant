@@ -21,6 +21,9 @@ a {
 main {
     overflow: hidden;
 }
+picture {
+    height: 100%;
+}
 :root {
     --deepgold: #b5986d;
     --deepblue: #020b1b;

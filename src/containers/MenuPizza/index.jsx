@@ -2,27 +2,31 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
+import pizzaTinyImg from '@food/pizza.jpg'
 import pizzaBigImg from '@food/pizza-big.jpg'
+import pizzaArtTinyImg from '@articles/article-pizza.jpg'
 import pizzaArtBigImg from '@articles/article-pizza-big.jpg'
 
 const MenuPizza = () => {
   return (
     <MenuItemPage
-        plateImg={pizzaBigImg}
-        plateImgAlt={"Handmade pizza of chicken, cheese and pineapple"}
-        title={"Pizza"}
-        schedule={"12:00 am - 22:00 pm 7 days"}
-        article={
+      imgTinySrc={pizzaTinyImg}
+      imgBigSrc={pizzaBigImg}
+      imgAlt={"Handmade pizza of chicken, cheese and pineapple"}
+      title={"Pizza"}
+      schedule={"12:00 am - 22:00 pm 7 days"}
+      article={
         <ArticleInfo
-            imgSrc={pizzaArtBigImg}
-            imgAlt={"Toasted bread with grapes and butter"}
-            description={<>
-                Our menu includes many Italian favorites such as our
-                old-world style pizza pies to sweet perfection!
-              </>
-            }
-          />
-        }
+          imgTinySrc={pizzaArtTinyImg}
+          imgBigSrc={pizzaArtBigImg}
+          imgAlt={"Toasted bread with grapes and butter"}
+          description={<>
+              Our menu includes many Italian favorites such as our
+              old-world style pizza pies to sweet perfection!
+            </>
+          }
+        />
+      }
     >
       {/* Scalable menu with a call from APIs */}
         <ItemFoodMenu

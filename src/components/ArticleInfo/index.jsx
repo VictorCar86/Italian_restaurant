@@ -1,22 +1,25 @@
 import React from 'react'
 import "./ArticleInfo.css"
 
-const ArticleInfo = ({ imgSrc, imgAlt, description }) => {
+const ArticleInfo = ({ imgTinySrc = "", imgBigSrc = "", imgAlt = "", description }) => {
   return (
     <article className='ArticleInfo'>
+      <picture>
+        <source srcSet={imgTinySrc} media="(max-width: 768px)" />
         <img
             className='ArticleInfo__img'
-            src={imgSrc}
+            src={imgBigSrc}
             alt={imgAlt}
         />
-        <div className='ArticleInfo__text-container'>
-            <div className='line-addon'></div>
-            <p className='ArticleInfo__text-container__text'>
-                { description }
-            </p>
-            <div className='line-addon'></div>
-        </div>
-        <div className='ArticleInfo__addon'></div>
+      </picture>
+      <div className='ArticleInfo__text-container'>
+        <div className='line-addon'></div>
+        <p className='ArticleInfo__text-container__text'>
+            { description }
+        </p>
+        <div className='line-addon'></div>
+      </div>
+      <div className='ArticleInfo__addon'></div>
     </article>
   )
 }

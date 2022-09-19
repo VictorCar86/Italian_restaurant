@@ -6,21 +6,27 @@ import PageTemplate from '../PageTemplate'
 import SecondaryNav from '../SecondaryNav'
 import Title from '../Title'
 import DescriptionInfo from '../DescriptionInfo'
-import ReservationSection from '../ReservationSection'
-import ReservationFormSearch from '../ReservationFormSearch'
 
-const MenuItemPage = ({ plateImg, plateImgAlt, title, schedule, children, article }) => {
+const MenuItemPage = ({
+    imgTinySrc = "",
+    imgBigSrc = "",
+    imgAlt = "",
+    title = "",
+    schedule = "",
+    children,
+    article
+  }) => {
   return (
     <>
       <PageTemplate
         specialNav={true}
-        imgSrc={plateImg}
-        imgAlt={plateImgAlt}
+        imgTinySrc={imgTinySrc}
+        imgBigSrc={imgBigSrc}
+        imgAlt={imgAlt}
       >
-
         <SecondaryNav
           pages={[ { title: "Menu", route: "/#menu"} ]}
-          titlePage={ title }
+          titlePage={title}
         />
 
         <Title title={title} />
