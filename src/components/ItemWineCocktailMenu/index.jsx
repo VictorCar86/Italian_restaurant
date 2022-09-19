@@ -8,33 +8,33 @@ const ItemWineCocktailMenu = ({ title, year, category, glassPrice, carafePrice }
         <div className='huge-divisor-addon'></div>
         {category === "champagne" &&
             <>
-              <div>
-                <span className='ItemWineCocktailMenu-container__description'>Glass 125ml</span>
-                <span className='ItemWineCocktailMenu-container__price'>{glassPrice}</span>
+              <div className='ItemWineCocktailMenu-container__info'>
+                <span className='ItemWineCocktailMenu-container__info__description'>Glass 125ml</span>
+                <span className='ItemWineCocktailMenu-container__info__price'>{glassPrice}</span>
               </div>
-              <div>
-                <span className='ItemWineCocktailMenu-container__description'>Carafe 375ml</span>
-                <span className='ItemWineCocktailMenu-container__price'>{carafePrice}</span>
+              <div className='ItemWineCocktailMenu-container__info'>
+                <span className='ItemWineCocktailMenu-container__info__description'>Carafe 375ml</span>
+                <span className='ItemWineCocktailMenu-container__info__price'>{carafePrice}</span>
               </div>
             </>
         }
         {category === "wine" &&
             <>
               <p className='ItemWineCocktailMenu-container__vintage'>Vintage {year}</p>
-              <div>
-                <span className='ItemWineCocktailMenu-container__description'>Glass 125ml</span>
-                <span className='ItemWineCocktailMenu-container__price'>{glassPrice}</span>
+              <div className='ItemWineCocktailMenu-container__info'>
+                <span className='ItemWineCocktailMenu-container__info__description'>Glass 125ml</span>
+                <span className='ItemWineCocktailMenu-container__info__price'>{glassPrice}</span>
               </div>
-              <div>
-                <span className='ItemWineCocktailMenu-container__description'>Carafe 375ml</span>
-                <span className='ItemWineCocktailMenu-container__price'>{carafePrice}</span>
+              <div className='ItemWineCocktailMenu-container__info'>
+                <span className='ItemWineCocktailMenu-container__info__description'>Carafe 375ml</span>
+                <span className='ItemWineCocktailMenu-container__info__price'>{carafePrice}</span>
               </div>
             </>
         }
         {category === "cocktail" &&
-            <div>
-              <span className='ItemWineCocktailMenu-container__description'>Glass 150ml</span>
-              <span className='ItemWineCocktailMenu-container__price'>{glassPrice}</span>
+            <div className='ItemWineCocktailMenu-container__info'>
+              <span className='ItemWineCocktailMenu-container__info__description'>Glass 150ml</span>
+              <span className='ItemWineCocktailMenu-container__info__price'>{glassPrice}</span>
             </div>
         }
     </article>

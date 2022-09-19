@@ -71,6 +71,11 @@ main {
     font-size: 2rem;
     color: var(--deepgold);
 }
+@media (max-width: 768px) {
+    .huge-divisor-addon {
+        margin: 10px 0;
+    }
+}
 
 .Item-title {
     margin: 45px 0 30px;

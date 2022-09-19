@@ -12,12 +12,15 @@
 }
 .CountryTemplateWineCocktail__navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
     margin-bottom: 70px;
 }
 .CountryTemplateWineCocktail__navbar label {
     position: relative;
     height: max-content;
+    width: 157px;
 }
 .CountryTemplateWineCocktail__navbar label input {
     position: absolute;
