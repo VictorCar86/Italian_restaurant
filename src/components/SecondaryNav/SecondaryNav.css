@@ -1,6 +1,7 @@
 .SecondaryNav__ul {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     height: 250px;
     padding-bottom: 90px;

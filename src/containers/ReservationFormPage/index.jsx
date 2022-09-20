@@ -54,7 +54,7 @@ const ReservationFormPage = () => {
     return (
       <>
           <Navbar />
-          <main className='ReservationFormPage'>
+          <main className='BackgroundImgMain'>
             <SecondaryNav pages={pages} titlePage='Form' />
             <ReservationSection special="true" >
               {state.date && (

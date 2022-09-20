@@ -18,7 +18,7 @@ const PageTemplate = ({ specialNav, imgTinySrc, imgBigSrc, imgAlt, children }) =
           />
         </picture>
       </header>
-      <main className='PageTemplate-main'>
+      <main className='PageTemplate-main BackgroundImgMain'>
         { children }
         <ReservationSection>
           <ReservationFormSearch />

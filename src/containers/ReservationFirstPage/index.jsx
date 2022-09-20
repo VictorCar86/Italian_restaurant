@@ -9,7 +9,7 @@ const ReservationFirstPage = () => {
   return (
     <>
         <Navbar />
-        <main className='ReservationFirstPage__main'>
+        <main className='BackgroundImgMain'>
           <SecondaryNav titlePage='Reservation' />
           <ReservationSection special="true" >
             <ReservationFormSearch special="true" />

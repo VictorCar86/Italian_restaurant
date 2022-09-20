@@ -111,3 +111,11 @@ picture {
     font-weight: 500;
     color: var(--deepgold);
 }
+
+.BackgroundImgMain {
+    padding: 0 14%;
+    min-height: 100vh;
+    background-image: url("./assets/images/addons/background.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
