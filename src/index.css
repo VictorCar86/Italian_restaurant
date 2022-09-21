@@ -115,7 +115,7 @@ picture {
 .BackgroundImgMain {
     padding: 0 14%;
     min-height: 100vh;
-    background-image: url("./assets/images/addons/background.jpg");
+    background-image: url("./assets/images/addons/background.webp");
     background-repeat: no-repeat;
     background-position: top;
 }

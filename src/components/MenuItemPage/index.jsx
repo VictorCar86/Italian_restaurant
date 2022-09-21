@@ -1,7 +1,5 @@
 import React from 'react'
 import "./MenuItemPage.css"
-import { Link } from "react-router-dom"
-import { HashLink } from 'react-router-hash-link'
 import PageTemplate from '../PageTemplate'
 import SecondaryNav from '../SecondaryNav'
 import Title from '../Title'

@@ -2,10 +2,10 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
-import specialtyPastaTinyImg from '@food/specialty-pastas.jpg'
-import specialtyPastaBigImg from '@food/specialty-pastas-big.jpg'
-import specialtyPastaArtTinyImg from '@articles/article-specialty-pastas.jpg'
-import specialtyPastaArtBigImg from '@articles/article-specialty-pastas-big.jpg'
+import specialtyPastaTinyImg from '@food/specialty-pastas.webp'
+import specialtyPastaBigImg from '@food/specialty-pastas-big.webp'
+import specialtyPastaArtTinyImg from '@articles/article-specialty-pastas.webp'
+import specialtyPastaArtBigImg from '@articles/article-specialty-pastas-big.webp'
 
 const MenuPastas = () => {
   return (

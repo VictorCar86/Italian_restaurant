@@ -1,7 +1,7 @@
 import React from 'react'
 import "./MainPresentation.css"
-import restaurantTinyImg from '@addons/fallon-travels.jpg'
-import restaurantBigImg from '@addons/fallon-travels-big.jpg'
+import restaurantTinyImg from '@addons/fallon-travels.webp'
+import restaurantBigImg from '@addons/fallon-travels-big.webp'
 import FacebookIcon from '../Icons/FacebookIcon'
 import InstagramIcon from '../Icons/InstagramIcon'
 import EmailIcon from '../Icons/EmailIcon'

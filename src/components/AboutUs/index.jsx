@@ -1,9 +1,9 @@
 import React from 'react'
 import "./AboutUs.css"
 import Title from '../Title'
-import chefTinyImg from '@addons/chef-cutting.jpg'
-import chefBigImg from '@addons/chef-cutting-big.jpg'
-import musicalImg from '@addons/musical.png'
+import chefTinyImg from '@addons/chef-cutting.webp'
+import chefBigImg from '@addons/chef-cutting-big.webp'
+import musicalImg from '@addons/musical.webp'
 
 const AboutUs = () => {
   return (

@@ -9,6 +9,7 @@
     text-align: center;
 }
 .Reservation-section__relevant-description__img {
+    height: 55px;
     width: 75px;
 }
 .Reservation-section__relevant-description__addon {

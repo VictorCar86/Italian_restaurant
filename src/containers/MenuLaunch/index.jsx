@@ -2,10 +2,10 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
-import launchSetMenuTinyImg from '@food/lunch_set_menu.jpg'
-import launchSetMenuBigImg from '@food/lunch_set_menu-big.jpg'
-import launchSetMenuArtTinyImg from '@articles/article-lunch-set-menu.jpg'
-import launchSetMenuArtBigImg from '@articles/article-lunch-set-menu-big.jpg'
+import launchSetMenuTinyImg from '@food/lunch_set_menu.webp'
+import launchSetMenuBigImg from '@food/lunch_set_menu-big.webp'
+import launchSetMenuArtTinyImg from '@articles/article-lunch-set-menu.webp'
+import launchSetMenuArtBigImg from '@articles/article-lunch-set-menu-big.webp'
 
 const MenuLaunch = () => {
   return (

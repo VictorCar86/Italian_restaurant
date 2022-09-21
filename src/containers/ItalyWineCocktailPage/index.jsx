@@ -1,8 +1,8 @@
 import React from 'react'
 import "./ItalyWineCocktailPage.css"
 import CountryTemplateWineCocktail from "../../components/CountryTemplateWineCocktail"
-import italyTinyImg from '@drinks/italy-wc.jpg'
-import italyBigImg from '@drinks/italy-wc-big.jpg'
+import italyTinyImg from '@drinks/italy-wc.webp'
+import italyBigImg from '@drinks/italy-wc-big.webp'
 import italianProducts from '../../utils/italianProducts'
 
 const ItalyWineCocktailPage = () => {

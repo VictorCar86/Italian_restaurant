@@ -2,10 +2,10 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
-import pizzaTinyImg from '@food/pizza.jpg'
-import pizzaBigImg from '@food/pizza-big.jpg'
-import pizzaArtTinyImg from '@articles/article-pizza.jpg'
-import pizzaArtBigImg from '@articles/article-pizza-big.jpg'
+import pizzaTinyImg from '@food/pizza.webp'
+import pizzaBigImg from '@food/pizza-big.webp'
+import pizzaArtTinyImg from '@articles/article-pizza.webp'
+import pizzaArtBigImg from '@articles/article-pizza-big.webp'
 
 const MenuPizza = () => {
   return (

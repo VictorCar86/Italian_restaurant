@@ -6,16 +6,16 @@ import SecondaryNav from '@components/SecondaryNav'
 import Title from '@components/Title'
 import DescriptionInfo from "@components/DescriptionInfo"
 import ArticleInfo from "@components/ArticleInfo"
-import wineItalyImg from '@drinks/wines-italy.jpg'
-import wineSpainImg from '@drinks/wines-spain.jpg'
-import wineFranceImg from '@drinks/wines-france.jpg'
-import winePortugalImg from '@drinks/wines-portugal.jpg'
-import wineChileImg from '@drinks/wines-chile.jpg'
-import wineCocktailTinyImg from '@drinks/wine&cocktail.jpg'
-import wineCocktailBigImg from '@drinks/wine&cocktail-big.jpg'
-import wineCocktailDescImg from '@drinks/desc-wine&cocktail.jpg'
-import wineCocktailArtTinyImg from '@articles/article-wine&cocktail.jpg'
-import wineCocktailArtBigImg from '@articles/article-wine&cocktail-big.jpg'
+import wineItalyImg from '@drinks/wines-italy.webp'
+import wineSpainImg from '@drinks/wines-spain.webp'
+import wineFranceImg from '@drinks/wines-france.webp'
+import winePortugalImg from '@drinks/wines-portugal.webp'
+import wineChileImg from '@drinks/wines-chile.webp'
+import wineCocktailTinyImg from '@drinks/wine&cocktail.webp'
+import wineCocktailBigImg from '@drinks/wine&cocktail-big.webp'
+import wineCocktailDescImg from '@drinks/desc-wine&cocktail.webp'
+import wineCocktailArtTinyImg from '@articles/article-wine&cocktail.webp'
+import wineCocktailArtBigImg from '@articles/article-wine&cocktail-big.webp'
 
 const WineCocktailPage = () => {
 

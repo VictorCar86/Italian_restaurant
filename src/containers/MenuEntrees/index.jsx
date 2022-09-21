@@ -2,10 +2,10 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
-import entreesTinyImg from '@food/entrees.jpg'
-import entreesBigImg from '@food/entrees-big.jpg'
-import entreesArtTinyImg from '@articles/article-entrees.jpg'
-import entreesArtBigImg from '@articles/article-entrees-big.jpg'
+import entreesTinyImg from '@food/entrees.webp'
+import entreesBigImg from '@food/entrees-big.webp'
+import entreesArtTinyImg from '@articles/article-entrees.webp'
+import entreesArtBigImg from '@articles/article-entrees-big.webp'
 
 const MenuEntrees = () => {
   return (

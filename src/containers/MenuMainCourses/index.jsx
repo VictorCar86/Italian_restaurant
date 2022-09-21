@@ -2,10 +2,10 @@ import React from 'react'
 import MenuItemPage from '../../components/MenuItemPage'
 import ItemFoodMenu from '../../components/ItemFoodMenu'
 import ArticleInfo from '../../components/ArticleInfo'
-import mainCoursesTinyImg from '@food/main_courses.jpg'
-import mainCoursesBigImg from '@food/main_courses-big.jpg'
-import mainCoursesArtTinyImg from '@articles/article-main_courses.jpg'
-import mainCoursesArtBigImg from '@articles/article-main_courses-big.jpg'
+import mainCoursesTinyImg from '@food/main_courses.webp'
+import mainCoursesBigImg from '@food/main_courses-big.webp'
+import mainCoursesArtTinyImg from '@articles/article-main_courses.webp'
+import mainCoursesArtBigImg from '@articles/article-main_courses-big.webp'
 
 const MenuMainCourses = () => {
   return (

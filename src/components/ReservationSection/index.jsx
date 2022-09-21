@@ -1,7 +1,7 @@
 import React from 'react'
 import "./ReservationSection.css"
 import Title from '../Title'
-import reginaLogoImg from '@addons/la-regina-logo.png'
+import reginaLogoImg from '@addons/la-regina-logo.webp'
 
 const ReservationSection = ({ children, special = false }) => {
   return (

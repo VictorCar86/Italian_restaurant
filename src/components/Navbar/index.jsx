@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./Navbar.css"
 import { Link } from "react-router-dom"
 import { HashLink } from 'react-router-hash-link'
-import reginaLogoImg from '@addons/la-regina-logo.png'
+import reginaLogoImg from '@addons/la-regina-logo.webp'
 import AlignerIcon from '../Icons/AlignerIcon'
 import ReservationIcon from '../Icons/ReservationIcon'
 import RightArrowsIcon from '../Icons/RightArrowsIcon'
@@ -61,7 +61,12 @@ const Navbar = ({special = false}) => {
 
   return (
     <nav className='navbar'>
-        <button className={`navbar__aligner ${buttonClass}`} onClick={toggleModal} type='button'>
+        <button
+          className={`navbar__aligner ${buttonClass}`}
+          onClick={toggleModal}
+          type='button'
+          title='navigation'
+        >
           {!modalMenu && <AlignerIcon />}
           {modalMenu && <CrossIcon />}
         </button>
@@ -125,8 +130,12 @@ const Navbar = ({special = false}) => {
               </Link>
             </li>
         </ul>
-        <button className='navbar__reserv-button' type='button'>
-          <Link to="/reservation">
+        <button
+          className='navbar__reserv-button'
+          type='button'
+          title='reservations'
+        >
+          <Link to="/reservation" aria-label="link to reservations" >
             <ReservationIcon />
           </Link>
         </button>

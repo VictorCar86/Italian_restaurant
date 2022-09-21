@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./CongratsModal.css"
-import ModalImg from '../../assets/images/addons/modal.jpg'
-import ReginaLogoImg from '../../assets/images/addons/la-regina-logo.png'
+import ModalImg from '../../assets/images/addons/modal.webp'
+import ReginaLogoImg from '../../assets/images/addons/la-regina-logo.webp'
 import { useNavigate } from 'react-router-dom'
 
 const CongratsModal = ({ toggleState, children }) => {
