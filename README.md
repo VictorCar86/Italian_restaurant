@@ -9,6 +9,10 @@ complete section to book a direct reservation in order to have a great and custo
 - React - <img src="https://skills.thijs.gg/icons?i=react" width="18px">
 - Vanilla CSS - <img src="https://skills.thijs.gg/icons?i=css" width="18px">
 
+## Take a look at the project online 👇
+
+🔗 [La Regina - Italian restaurant](https://laregina.netlify.app/)
+
 ##
 
 💭 This page is inspired from the work of Natali Shebrovskaya: [Delicious Italian site](https://www.behance.net/gallery/142015341/Delicious-Italian-site)
@@ -39,12 +43,6 @@ npm run build-dev
 
 Open the file `dist/index.html` in your browser
 
-##
-
-## Take a look at the project 👇
-
-🔗 [La Regina - Italian restaurant](https://laregina.netlify.app/)
-
 ## Preview images 👀
 
 ### Main page ✨
@@ -70,3 +68,7 @@ Open the file `dist/index.html` in your browser
 
 ### Reservation Page 📖
 ![laregina netlify app_ (2)](https://user-images.githubusercontent.com/96636507/191575671-7fe61a8b-a6c0-4f3e-a746-d48d7ddcf2e7.jpg)
+
+## Take a look at the project 👇
+
+🔗 [La Regina - Italian restaurant](https://laregina.netlify.app/)
