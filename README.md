@@ -8,6 +8,7 @@ complete section to book a direct reservation in order to have a great and custo
 ### Tools used:
 - React - <img src="https://skills.thijs.gg/icons?i=react" width="18px">
 - Vanilla CSS - <img src="https://skills.thijs.gg/icons?i=css" width="18px">
+- HTML - <img src="https://skills.thijs.gg/icons?i=html" width="18px">
 
 ## Take a look at the project online 👇
 
