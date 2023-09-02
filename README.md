@@ -17,10 +17,6 @@ complete section to book a direct reservation in order to have a great and custo
 
 ##
 
-💭 This page is inspired from the work of Natali Shebrovskaya: [Delicious Italian site](https://www.behance.net/gallery/142015341/Delicious-Italian-site)
-
-##
-
 ## Building and running on localhost
 
 First install dependencies:
